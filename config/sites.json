@@ -1,0 +1,116 @@
+{
+  "bangla_sites": [
+    {
+      "name": "Prothom Alo",
+      "url": "https://www.prothomalo.com",
+      "rss_feed": null,
+      "selectors": {
+        "article_links": "article a",
+        "title": "h1",
+        "body": "article p",
+        "date": "time"
+      }
+    },
+    {
+      "name": "BD News 24",
+      "url": "https://bangla.bdnews24.com",
+      "rss_feed": null,
+      "selectors": {
+        "article_links": ".news a",
+        "title": "h1",
+        "body": "article p",
+        "date": ".time"
+      }
+    },
+    {
+      "name": "Kaler Kantho",
+      "url": "https://www.kalerkantho.com",
+      "rss_feed": null,
+      "selectors": {
+        "article_links": "article a",
+        "title": "h1",
+        "body": ".article-body p",
+        "date": "time"
+      }
+    },
+    {
+      "name": "Bangla Tribune",
+      "url": "https://www.banglatribune.com",
+      "rss_feed": null,
+      "selectors": {
+        "article_links": ".news-title a",
+        "title": "h1",
+        "body": ".article-content p",
+        "date": ".publish-date"
+      }
+    },
+    {
+      "name": "Dhaka Post",
+      "url": "https://www.dhakapost.com",
+      "rss_feed": null,
+      "selectors": {
+        "article_links": "article a",
+        "title": "h1",
+        "body": ".content p",
+        "date": "time"
+      }
+    }
+  ],
+  "english_sites": [
+    {
+      "name": "The Daily Star",
+      "url": "https://www.thedailystar.net",
+      "rss_feed": "https://www.thedailystar.net/rss.xml",
+      "selectors": {
+        "article_links": "article a",
+        "title": "h1",
+        "body": "article p",
+        "date": "time"
+      }
+    },
+    {
+      "name": "New Age",
+      "url": "https://www.newagebd.net",
+      "rss_feed": null,
+      "selectors": {
+        "article_links": ".news a",
+        "title": "h1",
+        "body": ".article-content p",
+        "date": ".publish-date"
+      }
+    },
+    {
+      "name": "The New Nation",
+      "url": "https://www.dailynewnation.com",
+      "rss_feed": null,
+      "selectors": {
+        "article_links": "article a",
+        "title": "h1",
+        "body": ".story-body p",
+        "date": "time"
+      }
+    },
+    {
+      "name": "Daily Sun",
+      "url": "https://www.daily-sun.com",
+      "rss_feed": null,
+      "selectors": {
+        "article_links": ".news-item a",
+        "title": "h1",
+        "body": ".news-content p",
+        "date": ".date"
+      }
+    },
+    {
+      "name": "Dhaka Tribune",
+      "url": "https://www.dhakatribune.com",
+      "rss_feed": "https://www.dhakatribune.com/feed",
+      "selectors": {
+        "article_links": "article a",
+        "title": "h1",
+        "body": ".article-content p",
+        "date": "time"
+      }
+    }
+  ]
+}

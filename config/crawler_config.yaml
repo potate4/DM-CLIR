@@ -1,0 +1,30 @@
+# Crawler Configuration
+
+# Target documents per language
+target_documents_per_language: 2500
+
+# Crawler settings
+crawler:
+  delay_between_requests: 2  # seconds (to be respectful to servers)
+  timeout: 30  # seconds
+  max_retries: 3
+  user_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+
+# Storage settings
+storage:
+  raw_data_dir: "data/raw"
+  save_frequency: 100  # save every N documents
+  format: "json"  # json or csv
+
+# Preprocessing settings
+preprocessing:
+  min_body_length: 100  # minimum characters in body
+  max_body_length: 50000  # maximum characters
+  remove_html_tags: true
+  normalize_whitespace: true
+  extract_entities: false  # set to true for NER (optional)
+
+# Language detection
+language_detection:
+  enabled: true
+  confidence_threshold: 0.8
