@@ -3,7 +3,7 @@
     {
       "name": "Prothom Alo",
       "url": "https://www.prothomalo.com",
-      "rss_feed": null,
+      "rss_feed": "https://www.prothomalo.com/feed/",
       "selectors": {
         "article_links": "article a",
         "title": "h1",
@@ -14,7 +14,7 @@
     {
       "name": "BD News 24",
       "url": "https://bangla.bdnews24.com",
-      "rss_feed": null,
+      "rss_feed": "https://bangla.bdnews24.com/rss",
       "selectors": {
         "article_links": ".news a",
         "title": "h1",
@@ -71,7 +71,7 @@
     {
       "name": "New Age",
       "url": "https://www.newagebd.net",
-      "rss_feed": null,
+      "rss_feed": "https://www.newagebd.net/rss.xml",
       "selectors": {
         "article_links": ".news a",
         "title": "h1",
