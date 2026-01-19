@@ -84,3 +84,5 @@ docs/_templates/
 !data/processed/.gitkeep
 !data/indices/.gitkeep
 !data/evaluation/.gitkeep
+
+.claude
