@@ -1,0 +1,35 @@
+# Indexer Configuration
+
+# Index type
+index_type: "inverted_index"  # or "elasticsearch"
+
+# Inverted index settings
+inverted_index:
+  use_stemming: false  # stemming for Bangla is complex
+  use_lemmatization: false
+  min_term_frequency: 2  # ignore terms appearing less than this
+  max_document_frequency: 0.8  # ignore terms in >80% of docs
+
+# Tokenization
+tokenization:
+  bangla:
+    use_unicode_normalization: true
+    remove_punctuation: true
+  english:
+    lowercase: true
+    remove_punctuation: true
+    remove_stopwords: true
+
+# Embeddings (optional but recommended)
+embeddings:
+  enabled: true
+  model: "sentence-transformers/LaBSE"  # multilingual model
+  batch_size: 32
+  max_length: 512
+  cache_dir: "data/indices/embeddings"
+
+# Storage
+storage:
+  index_file: "data/indices/inverted_index.pkl"
+  document_store: "data/processed/documents.json"
+  metadata_file: "data/processed/metadata.csv"
