@@ -4,24 +4,28 @@ python>=3.8
 # Web crawling
 requests>=2.31.0
 beautifulsoup4>=4.12.0
-selenium>=4.15.0
 lxml>=4.9.0
-feedparser>=6.0.10  # for RSS feeds
+feedparser>=6.0.10
 
-# NLP and text processing
-spacy>=3.7.0
-langdetect>=1.0.9
-textblob>=0.17.1
-nltk>=3.8.0
-
-# Multilingual embeddings
-sentence-transformers>=2.2.0
-transformers>=4.35.0
-torch>=2.0.0
+# ====== MODULE B: Query Processing ======
 
 # Translation
-deep-translator>=1.11.0
-googletrans==3.1.0a0  # free Google Translate
+deep-translator>=1.11.0          # Google Translate API (primary)
+transformers>=4.35.0             # MarianMT models (fallback)
+torch>=2.0.0                     # Required for transformers
+sentencepiece>=0.1.99            # Required for MarianMT tokenizer
+
+# Query Expansion
+nltk>=3.8.0                      # WordNet, stemming, lemmatization
+gensim>=4.3.0                    # Word embeddings (GloVe, Word2Vec)
+
+# Named Entity Recognition
+spacy>=3.7.0                     # NER extraction
+
+# ====== MODULE A & C: Indexing & Retrieval ======
+
+# Embeddings
+sentence-transformers>=2.2.0     # Sentence embeddings for semantic search
 
 # Indexing and search
 whoosh>=2.7.4
@@ -30,7 +34,6 @@ rank-bm25>=0.2.2
 # Fuzzy matching
 fuzzywuzzy>=0.18.0
 python-Levenshtein>=0.23.0
-jellyfish>=1.0.0
 
 # Data handling
 pandas>=2.1.0
@@ -39,25 +42,23 @@ scikit-learn>=1.3.0
 
 # Configuration
 pyyaml>=6.0.1
-python-dotenv>=1.0.0
 
 # Progress bars and logging
 tqdm>=4.66.0
-colorlog>=6.7.0
 
 # Visualization
 matplotlib>=3.8.0
-seaborn>=0.13.0
-plotly>=5.17.0
 
 # Testing
 pytest>=7.4.0
-pytest-cov>=4.1.0
 
-# Jupyter notebooks
-jupyter>=1.0.0
-ipykernel>=6.25.0
-notebook>=7.0.0
-
-# Optional: Elasticsearch (if using)
-# elasticsearch>=8.10.0
+# ====== Post-install commands ======
+# Run these after pip install:
+#
+# Download spaCy English model:
+#   python -m spacy download en_core_web_sm
+#
+# Download NLTK data:
+#   python -c "import nltk; nltk.download('wordnet'); nltk.download('omw-1.4')"
+#
+# MarianMT models download automatically on first use
