@@ -1,0 +1,32 @@
+[
+  {
+    "query": "bangladesh cricket team",
+    "lexical_avg": 0.898757633488932,
+    "semantic_avg": 0.6195474982261657,
+    "winner": "Lexical"
+  },
+  {
+    "query": "education system",
+    "lexical_avg": 0.2,
+    "semantic_avg": 0.5971259713172913,
+    "winner": "Semantic"
+  },
+  {
+    "query": "economic growth",
+    "lexical_avg": 0.6737324338711372,
+    "semantic_avg": 0.5664640188217163,
+    "winner": "Lexical"
+  },
+  {
+    "query": "শিক্ষা ব্যবস্থা",
+    "lexical_avg": 0.0,
+    "semantic_avg": 0.5966109156608581,
+    "winner": "Semantic"
+  },
+  {
+    "query": "ক্রিকেট খেলা",
+    "lexical_avg": 0.0,
+    "semantic_avg": 0.6201394319534301,
+    "winner": "Semantic"
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "query": "bangladesh cricket team",
+    "bm25_score": 1.0,
+    "tfidf_score": 0.16374161789093786,
+    "winner": "BM25"
+  },
+  {
+    "query": "education system",
+    "bm25_score": 1.0,
+    "tfidf_score": 0.04362211390776109,
+    "winner": "BM25"
+  },
+  {
+    "query": "economic growth",
+    "bm25_score": 1.0,
+    "tfidf_score": 0.016695205048279576,
+    "winner": "BM25"
+  },
+  {
+    "query": "শিক্ষা ব্যবস্থা",
+    "bm25_score": 0.0,
+    "tfidf_score": 0.0,
+    "winner": "TF-IDF"
+  },
+  {
+    "query": "ক্রিকেট খেলা",
+    "bm25_score": 0.0,
+    "tfidf_score": 0.0,
+    "winner": "TF-IDF"
+  }
+]

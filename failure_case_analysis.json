@@ -1,0 +1,31 @@
+{
+  "synonym_failures": [],
+  "cross_script_failures": [
+    {
+      "query": "শিক্ষা ব্যবস্থা",
+      "bm25_score": 0.0,
+      "semantic_score": 0.6325092315673828,
+      "reason": "Cross-script character mismatch"
+    },
+    {
+      "query": "ক্রিকেট খেলা",
+      "bm25_score": 0.0,
+      "semantic_score": 0.6386960744857788,
+      "reason": "Cross-script character mismatch"
+    }
+  ],
+  "semantic_wins": [
+    {
+      "query": "শিক্ষা ব্যবস্থা",
+      "bm25_score": 0.0,
+      "semantic_score": 0.6325092315673828,
+      "reason": "Semantic understanding vs exact matching"
+    },
+    {
+      "query": "ক্রিকেট খেলা",
+      "bm25_score": 0.0,
+      "semantic_score": 0.6386960744857788,
+      "reason": "Semantic understanding vs exact matching"
+    }
+  ]
+}
