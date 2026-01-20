@@ -1,0 +1,10 @@
+{
+  "total_documents": 19,
+  "models": [
+    "BM25",
+    "TF-IDF",
+    "Fuzzy",
+    "Semantic"
+  ],
+  "status": "complete"
+}
