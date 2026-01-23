@@ -23,6 +23,9 @@ gensim>=4.3.0                    # Word embeddings (GloVe, Word2Vec)
 # Named Entity Recognition
 spacy>=3.7.0                     # NER extraction
 
+# LLM API fallback
+google-genai>=1.0.0              # Gemini API for NER/synonym fallback
+
 # ====== MODULE A & C: Indexing & Retrieval ======
 
 # Embeddings
@@ -63,3 +66,7 @@ pytest>=7.4.0
 #   python -c "import nltk; nltk.download('wordnet'); nltk.download('omw-1.4')"
 #
 # MarianMT models download automatically on first use
+#
+# Set Gemini API key (optional, for fallback):
+#   export GEMINI_API_KEY="your-api-key"  # Linux/Mac
+#   set GEMINI_API_KEY=your-api-key       # Windows
