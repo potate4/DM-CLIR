@@ -111,6 +111,248 @@
         "body": ".article-content p",
         "date": "time"
       }
+    },
+    {
+      "name": "BBC News",
+      "url": "https://www.bbc.com/news",
+      "rss_feed": "https://feeds.bbci.co.uk/news/rss.xml",
+      "selectors": {
+        "article_links": "a[href*='/news/']",
+        "title": "h1",
+        "body": "article p",
+        "date": "time"
+      }
+    },
+    {
+      "name": "Reuters",
+      "url": "https://www.reuters.com/world/",
+      "rss_feed": "https://feeds.reuters.com/reuters/worldNews",
+      "selectors": {
+        "article_links": "a[href*='/world/']",
+        "title": "h1",
+        "body": "article p",
+        "date": "time"
+      }
+    },
+    {
+      "name": "Al Jazeera",
+      "url": "https://www.aljazeera.com/news/",
+      "rss_feed": "https://www.aljazeera.com/xml/rss/all.xml",
+      "selectors": {
+        "article_links": "a[href*='/news/']",
+        "title": "h1",
+        "body": "article p",
+        "date": "time"
+      }
+    },
+    {
+      "name": "Associated Press",
+      "url": "https://apnews.com/hub/ap-top-news",
+      "rss_feed": "https://apnews.com/apf-topnews?output=atom",
+      "selectors": {
+        "article_links": "a[href*='/article/']",
+        "title": "h1",
+        "body": "article p",
+        "date": "time"
+      }
+    },
+    {
+      "name": "The Guardian",
+      "url": "https://www.theguardian.com/international",
+      "rss_feed": "https://www.theguardian.com/world/rss",
+      "selectors": {
+        "article_links": "a[href*='/']",
+        "title": "h1",
+        "body": "article p",
+        "date": "time"
+      }
+    },
+    {
+      "name": "NPR",
+      "url": "https://www.npr.org/sections/news/",
+      "rss_feed": "https://feeds.npr.org/1001/rss.xml",
+      "selectors": {
+        "article_links": "a[href*='/']",
+        "title": "h1",
+        "body": "article p",
+        "date": "time"
+      }
+    },
+    {
+      "name": "CNN",
+      "url": "https://www.cnn.com/world",
+      "rss_feed": "http://rss.cnn.com/rss/edition_world.rss",
+      "selectors": {
+        "article_links": "a[href*='/']",
+        "title": "h1",
+        "body": "article p",
+        "date": "time"
+      }
+    },
+    {
+      "name": "ABC News",
+      "url": "https://abcnews.go.com/International",
+      "rss_feed": "https://feeds.abcnews.com/abcnews/internationalheadlines",
+      "selectors": {
+        "article_links": "a[href*='/']",
+        "title": "h1",
+        "body": "article p",
+        "date": "time"
+      }
+    },
+    {
+      "name": "CBS News",
+      "url": "https://www.cbsnews.com/world/",
+      "rss_feed": "https://www.cbsnews.com/latest/rss/world",
+      "selectors": {
+        "article_links": "a[href*='/world/']",
+        "title": "h1",
+        "body": "article p",
+        "date": "time"
+      }
+    },
+    {
+      "name": "Sky News",
+      "url": "https://news.sky.com/world",
+      "rss_feed": "https://feeds.skynews.com/feeds/rss/world.xml",
+      "selectors": {
+        "article_links": "a[href*='/']",
+        "title": "h1",
+        "body": "article p",
+        "date": "time"
+      }
+    },
+    {
+      "name": "France 24",
+      "url": "https://www.france24.com/en/",
+      "rss_feed": "https://www.france24.com/en/rss",
+      "selectors": {
+        "article_links": "a[href*='/']",
+        "title": "h1",
+        "body": "article p",
+        "date": "time"
+      }
+    },
+    {
+      "name": "DW",
+      "url": "https://www.dw.com/en/top-stories/s-9097",
+      "rss_feed": "https://rss.dw.com/rdf/rss-en-all",
+      "selectors": {
+        "article_links": "a[href*='/']",
+        "title": "h1",
+        "body": "article p",
+        "date": "time"
+      }
+    },
+    {
+      "name": "Euronews",
+      "url": "https://www.euronews.com/news",
+      "rss_feed": "https://www.euronews.com/rss?level=theme&name=news",
+      "selectors": {
+        "article_links": "a[href*='/']",
+        "title": "h1",
+        "body": "article p",
+        "date": "time"
+      }
+    },
+    {
+      "name": "The Independent",
+      "url": "https://www.independent.co.uk/news/world",
+      "rss_feed": "https://www.independent.co.uk/news/world/rss",
+      "selectors": {
+        "article_links": "a[href*='/news/']",
+        "title": "h1",
+        "body": "article p",
+        "date": "time"
+      }
+    },
+    {
+      "name": "The Hindu",
+      "url": "https://www.thehindu.com/news/international/",
+      "rss_feed": "https://www.thehindu.com/news/international/feeder/default.rss",
+      "selectors": {
+        "article_links": "a[href*='/news/']",
+        "title": "h1",
+        "body": "article p",
+        "date": "time"
+      }
+    },
+    {
+      "name": "Hindustan Times",
+      "url": "https://www.hindustantimes.com/world-news",
+      "rss_feed": "https://www.hindustantimes.com/feeds/rss/world-news/rssfeed.xml",
+      "selectors": {
+        "article_links": "a[href*='/']",
+        "title": "h1",
+        "body": "article p",
+        "date": "time"
+      }
+    },
+    {
+      "name": "The Times of India",
+      "url": "https://timesofindia.indiatimes.com/world",
+      "rss_feed": "https://timesofindia.indiatimes.com/rssfeeds/296589292.cms",
+      "selectors": {
+        "article_links": "a[href*='/']",
+        "title": "h1",
+        "body": "article p",
+        "date": "time"
+      }
+    },
+    {
+      "name": "The Japan Times",
+      "url": "https://www.japantimes.co.jp/news/",
+      "rss_feed": "https://www.japantimes.co.jp/feed/",
+      "selectors": {
+        "article_links": "a[href*='/news/']",
+        "title": "h1",
+        "body": "article p",
+        "date": "time"
+      }
+    },
+    {
+      "name": "The Straits Times",
+      "url": "https://www.straitstimes.com/world",
+      "rss_feed": "https://www.straitstimes.com/news/world/rss.xml",
+      "selectors": {
+        "article_links": "a[href*='/world/']",
+        "title": "h1",
+        "body": "article p",
+        "date": "time"
+      }
+    },
+    {
+      "name": "The Globe and Mail",
+      "url": "https://www.theglobeandmail.com/world/",
+      "rss_feed": "https://www.theglobeandmail.com/world/rss/",
+      "selectors": {
+        "article_links": "a[href*='/world/']",
+        "title": "h1",
+        "body": "article p",
+        "date": "time"
+      }
+    },
+    {
+      "name": "The Irish Times",
+      "url": "https://www.irishtimes.com/world/",
+      "rss_feed": "https://www.irishtimes.com/arc/outboundfeeds/rss/?outputType=xml",
+      "selectors": {
+        "article_links": "a[href*='/world/']",
+        "title": "h1",
+        "body": "article p",
+        "date": "time"
+      }
+    },
+    {
+      "name": "The Manila Times",
+      "url": "https://www.manilatimes.net/news/world",
+      "rss_feed": "https://www.manilatimes.net/rss",
+      "selectors": {
+        "article_links": "a[href*='/news/']",
+        "title": "h1",
+        "body": "article p",
+        "date": "time"
+      }
     }
   ]
 }
