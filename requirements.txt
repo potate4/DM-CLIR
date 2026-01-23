@@ -1,8 +1,12 @@
+
 # Web crawling
 requests>=2.31.0
 beautifulsoup4>=4.12.0
 lxml>=4.9.0
+lxml_html_clean>=0.4.1          # newspaper3k dependency (html clean)
 feedparser>=6.0.10
+cloudscraper>=1.2.71            # Cloudflare bypass
+newspaper3k>=0.2.8              # Auto article extraction
 
 # ====== MODULE B: Query Processing ======
 
@@ -18,6 +22,9 @@ gensim>=4.3.0                    # Word embeddings (GloVe, Word2Vec)
 
 # Named Entity Recognition
 spacy>=3.7.0                     # NER extraction
+
+# LLM API fallback
+google-genai>=1.0.0              # Gemini API for NER/synonym fallback
 
 # ====== MODULE A & C: Indexing & Retrieval ======
 
@@ -59,3 +66,7 @@ pytest>=7.4.0
 #   python -c "import nltk; nltk.download('wordnet'); nltk.download('omw-1.4')"
 #
 # MarianMT models download automatically on first use
+#
+# Set Gemini API key (optional, for fallback):
+#   export GEMINI_API_KEY="your-api-key"  # Linux/Mac
+#   set GEMINI_API_KEY=your-api-key       # Windows
