@@ -1,11 +1,12 @@
-# Core dependencies
-python>=3.8
 
 # Web crawling
 requests>=2.31.0
 beautifulsoup4>=4.12.0
 lxml>=4.9.0
+lxml_html_clean>=0.4.1          # newspaper3k dependency (html clean)
 feedparser>=6.0.10
+cloudscraper>=1.2.71            # Cloudflare bypass
+newspaper3k>=0.2.8              # Auto article extraction
 
 # ====== MODULE B: Query Processing ======
 
