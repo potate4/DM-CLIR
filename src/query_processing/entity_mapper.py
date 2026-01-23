@@ -1,6 +1,7 @@
-"""Named entity recognition and cross-lingual mapping using spaCy"""
+"""Named entity recognition and cross-lingual mapping using spaCy with Gemini fallback"""
 
 from ..utils.logger import setup_logger
+from ..utils import gemini_api
 
 
 class EntityMapper:
@@ -34,12 +35,13 @@ class EntityMapper:
         'grameen bank': 'গ্রামীণ ব্যাংক',
     }
 
-    def __init__(self, spacy_model='en_core_web_sm'):
+    def __init__(self, spacy_model='en_core_web_sm', use_gemini_fallback=True):
         """
-        Initialize entity mapper with spaCy
+        Initialize entity mapper with spaCy and optional Gemini fallback
 
         Args:
             spacy_model: spaCy model name (default: en_core_web_sm)
+            use_gemini_fallback: Whether to use Gemini API as fallback
         """
         self.logger = setup_logger('EntityMapper')
         self.spacy_model_name = spacy_model
@@ -49,6 +51,10 @@ class EntityMapper:
         self._spacy_available = self._check_spacy()
         self._nlp = None  # Lazy loaded
 
+        # Check Gemini availability
+        self._use_gemini = use_gemini_fallback
+        self._gemini_available = gemini_api.is_available() if use_gemini_fallback else False
+
         # Build reverse mapping
         self.en_to_bn = self.CROSS_LINGUAL_MAP
         self.bn_to_en = {v: k for k, v in self.CROSS_LINGUAL_MAP.items()}
@@ -57,6 +63,8 @@ class EntityMapper:
         if self._spacy_available:
             methods.append('spaCy NER')
         methods.append('Dictionary')
+        if self._gemini_available:
+            methods.append('Gemini API')
 
         self.logger.info(f"EntityMapper initialized. Available: {', '.join(methods)}")
 
@@ -90,7 +98,7 @@ class EntityMapper:
 
     def extract_entities(self, text, language='english'):
         """
-        Extract named entities from text using spaCy
+        Extract named entities from text using spaCy, dictionary, and Gemini fallback
 
         Args:
             text: Input text
@@ -121,6 +129,14 @@ class EntityMapper:
                 self.method_used = 'dictionary'
             else:
                 self.method_used = 'spacy_ner+dictionary'
+
+        # Fallback to Gemini if no entities found and Gemini is available
+        if not entities and self._gemini_available:
+            gemini_entities = gemini_api.extract_entities(text, language)
+            if gemini_entities:
+                entities.extend(gemini_entities)
+                self.method_used = 'gemini_ner'
+                self.logger.debug(f"Used Gemini fallback for entity extraction: {len(gemini_entities)} entities")
 
         if not entities:
             self.method_used = 'none'
@@ -214,7 +230,7 @@ class EntityMapper:
 
     def map_entity(self, entity, source_lang, target_lang):
         """
-        Map entity to target language
+        Map entity to target language using dictionary or Gemini fallback
 
         Args:
             entity: Entity text
@@ -228,14 +244,24 @@ class EntityMapper:
             return entity
 
         entity_lower = entity.lower()
+        mapped = None
 
         if source_lang == 'english' and target_lang == 'bangla':
-            return self.en_to_bn.get(entity_lower, entity)
+            mapped = self.en_to_bn.get(entity_lower)
         elif source_lang == 'bangla' and target_lang == 'english':
             # For Bangla, try exact match first
-            if entity in self.bn_to_en:
-                return self.bn_to_en[entity]
-            return entity
+            mapped = self.bn_to_en.get(entity)
+
+        # If dictionary mapping found, return it
+        if mapped:
+            return mapped
+
+        # Fallback to Gemini if available and dictionary didn't have mapping
+        if self._gemini_available:
+            gemini_mapped = gemini_api.map_entity(entity, source_lang, target_lang)
+            if gemini_mapped and gemini_mapped != entity:
+                self.logger.debug(f"Used Gemini fallback to map entity: {entity} -> {gemini_mapped}")
+                return gemini_mapped
 
         return entity
 
@@ -282,7 +308,8 @@ class EntityMapper:
         """Return dict of available extraction methods"""
         return {
             'spacy_ner': self._spacy_available,
-            'dictionary': True
+            'dictionary': True,
+            'gemini_ner': self._gemini_available
         }
 
     def get_entity_types(self):

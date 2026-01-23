@@ -1,6 +1,7 @@
-"""Query expansion using WordNet, embeddings, stemming, and lemmatization"""
+"""Query expansion using WordNet, embeddings, stemming, lemmatization, and Gemini fallback"""
 
 from ..utils.logger import setup_logger
+from ..utils import gemini_api
 
 
 class QueryExpander:
@@ -24,13 +25,14 @@ class QueryExpander:
         'সংবাদ': ['খবর'],
     }
 
-    def __init__(self, max_expansions=5, use_embeddings=True):
+    def __init__(self, max_expansions=5, use_embeddings=True, use_gemini_fallback=True):
         """
         Initialize expander with available backends
 
         Args:
             max_expansions: Maximum synonyms per term
             use_embeddings: Whether to use word embeddings for similarity
+            use_gemini_fallback: Whether to use Gemini API as fallback for synonyms
         """
         self.logger = setup_logger('QueryExpander')
         self.max_expansions = max_expansions
@@ -41,6 +43,10 @@ class QueryExpander:
         self._wordnet_available = self._check_wordnet()
         self._embeddings_available = self._check_embeddings() if use_embeddings else False
         self._nltk_available = self._check_nltk()
+
+        # Check Gemini availability
+        self._use_gemini = use_gemini_fallback
+        self._gemini_available = gemini_api.is_available() if use_gemini_fallback else False
 
         # Lazy loaded resources
         self._lemmatizer = None
@@ -55,6 +61,8 @@ class QueryExpander:
         if self._nltk_available:
             methods.append('Stemming/Lemma')
         methods.append('Dictionary')
+        if self._gemini_available:
+            methods.append('Gemini API')
 
         self.logger.info(f"QueryExpander initialized. Available: {', '.join(methods)}")
 
@@ -150,7 +158,7 @@ class QueryExpander:
 
     def _get_synonyms_with_method(self, word, word_lower, language):
         """
-        Get synonyms for a word, trying multiple methods
+        Get synonyms for a word, trying multiple methods including Gemini fallback
 
         Returns:
             (list of synonyms, method used)
@@ -189,6 +197,15 @@ class QueryExpander:
             if word in self.BANGLA_FALLBACK:
                 synonyms.extend(self.BANGLA_FALLBACK[word])
                 method = 'dictionary_fallback' if method == 'none' else f'{method}+dictionary'
+
+        # Fallback to Gemini if no synonyms found and Gemini is available
+        if not synonyms and self._gemini_available:
+            lang_for_gemini = language if language in ['english', 'bangla'] else 'english'
+            gemini_synonyms = gemini_api.get_synonyms(word, lang_for_gemini, self.max_expansions)
+            if gemini_synonyms:
+                synonyms.extend(gemini_synonyms)
+                method = 'gemini'
+                self.logger.debug(f"Used Gemini fallback for synonyms of '{word}': {gemini_synonyms}")
 
         if not synonyms:
             method = 'none'
@@ -308,7 +325,8 @@ class QueryExpander:
             'wordnet': self._wordnet_available,
             'embeddings': self._embeddings_available,
             'stemming_lemma': self._nltk_available,
-            'dictionary_fallback': True
+            'dictionary_fallback': True,
+            'gemini': self._gemini_available
         }
 
     def get_wordnet_synonyms(self, word):
@@ -355,3 +373,18 @@ class QueryExpander:
         if stemmer:
             return stemmer.stem(word.lower())
         return word
+
+    def get_gemini_synonyms(self, word, language='english'):
+        """
+        Direct Gemini API lookup for synonyms
+
+        Args:
+            word: Word to look up
+            language: 'english' or 'bangla'
+
+        Returns:
+            List of synonyms from Gemini API
+        """
+        if not self._gemini_available:
+            return []
+        return gemini_api.get_synonyms(word, language, self.max_expansions)
