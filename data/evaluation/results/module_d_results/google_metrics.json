@@ -1,0 +1,159 @@
+{
+  "google_metrics": {
+    "precision@10": 0.26,
+    "mrr": 0.77,
+    "ndcg@10": 0.78,
+    "num_queries": 10
+  },
+  "per_query": [
+    {
+      "query": "Bangladesh national cricket team performance",
+      "num_results": 7,
+      "relevance": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "p@10": 0.4,
+      "mrr": 1.0,
+      "ndcg@10": 0.8756458727267334
+    },
+    {
+      "query": "বাংলাদেশের অর্থনৈতিক প্রবৃদ্ধি পরিস্থিতি",
+      "num_results": 7,
+      "relevance": [
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "p@10": 0.3,
+      "mrr": 1.0,
+      "ndcg@10": 0.9469024295259745
+    },
+    {
+      "query": "climate change এর প্রভাব in Bangladesh",
+      "num_results": 6,
+      "relevance": [
+        1,
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "p@10": 0.3,
+      "mrr": 1.0,
+      "ndcg@10": 0.9060254355346823
+    },
+    {
+      "query": "বাংলাদেশ নির্বাচন ও রাজনৈতিক অবস্থা",
+      "num_results": 6,
+      "relevance": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "p@10": 0.5,
+      "mrr": 1.0,
+      "ndcg@10": 1.0
+    },
+    {
+      "query": "Dhaka যানজট ও transport system",
+      "num_results": 6,
+      "relevance": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "p@10": 0.3,
+      "mrr": 1.0,
+      "ndcg@10": 1.0
+    },
+    {
+      "query": "garment শিল্পের শ্রমিকদের অবস্থা",
+      "num_results": 5,
+      "relevance": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "p@10": 0.0,
+      "mrr": 0.0,
+      "ndcg@10": 0.0
+    },
+    {
+      "query": "বাংলাদেশ technology startup ও digital innovation",
+      "num_results": 5,
+      "relevance": [
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "p@10": 0.2,
+      "mrr": 1.0,
+      "ndcg@10": 0.9197207891481876
+    },
+    {
+      "query": "COVID-19 স্বাস্থ্য ও মহামারি পরিস্থিতি",
+      "num_results": 5,
+      "relevance": [
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "p@10": 0.3,
+      "mrr": 0.3333333333333333,
+      "ndcg@10": 0.6182885020492784
+    },
+    {
+      "query": "Bangladesh-India কূটনৈতিক relations",
+      "num_results": 5,
+      "relevance": [
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "p@10": 0.2,
+      "mrr": 0.3333333333333333,
+      "ndcg@10": 0.5706417189553201
+    },
+    {
+      "query": "গাজা যুদ্ধ ও ceasefire আপডেট",
+      "num_results": 6,
+      "relevance": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "p@10": 0.1,
+      "mrr": 1.0,
+      "ndcg@10": 1.0
+    }
+  ],
+  "methodology": "Relevance estimated based on domain matching with labeled corpus and known relevant news domains"
+}
