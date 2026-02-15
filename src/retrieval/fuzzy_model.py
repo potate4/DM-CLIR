@@ -44,8 +44,7 @@ class FuzzyRetriever:
         for rank, idx in enumerate(top_indices, 1):
             results.append({
                 'doc': self.documents[idx],
-                'score': float(scores[idx]) / 100.0,  # Normalize to [0, 1]
-                'raw_score': int(scores[idx]),
+                'score': float(scores[idx]),  # Raw score [0, 100] - let ranker handle normalization
                 'rank': rank,
                 'model': 'Fuzzy'
             })

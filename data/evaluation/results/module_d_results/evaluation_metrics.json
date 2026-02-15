@@ -1,0 +1,76 @@
+{
+  "models": [
+    "BM25",
+    "TF-IDF",
+    "Fuzzy",
+    "Semantic"
+  ],
+  "best_model": {
+    "precision@10": "Semantic",
+    "recall@50": "Semantic",
+    "ndcg@10": "Semantic",
+    "mrr": "Semantic"
+  },
+  "evaluations": {
+    "BM25": {
+      "metrics": {
+        "precision@10": 0.10952380952380951,
+        "recall@50": 0.30136054421768704,
+        "ndcg@10": 0.1449302028219246,
+        "mrr": 0.3200194367333316
+      },
+      "meets_targets": {
+        "precision@10": false,
+        "recall@50": false,
+        "ndcg@10": false,
+        "mrr": false
+      },
+      "num_queries": 21
+    },
+    "TF-IDF": {
+      "metrics": {
+        "precision@10": 0.1,
+        "recall@50": 0.2212962962962963,
+        "ndcg@10": 0.14482778102199734,
+        "mrr": 0.2940381708238851
+      },
+      "meets_targets": {
+        "precision@10": false,
+        "recall@50": false,
+        "ndcg@10": false,
+        "mrr": false
+      },
+      "num_queries": 21
+    },
+    "Fuzzy": {
+      "metrics": {
+        "precision@10": 0.05714285714285714,
+        "recall@50": 0.16296296296296295,
+        "ndcg@10": 0.06849872207684504,
+        "mrr": 0.16242633373068155
+      },
+      "meets_targets": {
+        "precision@10": false,
+        "recall@50": false,
+        "ndcg@10": false,
+        "mrr": false
+      },
+      "num_queries": 21
+    },
+    "Semantic": {
+      "metrics": {
+        "precision@10": 0.8285714285714285,
+        "recall@50": 1.0,
+        "ndcg@10": 0.9605777061143299,
+        "mrr": 0.9682539682539681
+      },
+      "meets_targets": {
+        "precision@10": true,
+        "recall@50": true,
+        "ndcg@10": true,
+        "mrr": true
+      },
+      "num_queries": 21
+    }
+  }
+}
