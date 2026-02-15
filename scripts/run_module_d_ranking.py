@@ -26,7 +26,7 @@ def load_documents():
     # Load English documents
     english_path = 'data/processed/english_docs.json'
     if os.path.exists(english_path):
-        print(f"=� Loading English documents from {english_path}...")
+        print(f"📂 Loading English documents from {english_path}...")
         with open(english_path, 'r', encoding='utf-8') as f:
             for line in f:
                 try:
@@ -40,7 +40,7 @@ def load_documents():
     bangla_path = 'data/processed/bangla_docs.json'
     start_count = len(documents)
     if os.path.exists(bangla_path):
-        print(f"=� Loading Bangla documents from {bangla_path}...")
+        print(f"📂 Loading Bangla documents from {bangla_path}...")
         with open(bangla_path, 'r', encoding='utf-8') as f:
             for line in f:
                 try:
@@ -51,13 +51,13 @@ def load_documents():
         print(f"   Loaded {len(documents) - start_count} Bangla documents")
 
     # Ensure all docs have tokens
-    print("\n=' Preparing documents...")
+    print("\n🔧 Preparing documents...")
     for doc in documents:
         if 'tokens' not in doc or not doc['tokens']:
             text = (doc.get('title', '') + ' ' + doc.get('body', '')).lower()
             doc['tokens'] = [w for w in text.split() if len(w) > 1]
 
-    print(f"\n=� Total documents loaded: {len(documents)}")
+    print(f"\n✓ Total documents loaded: {len(documents)}")
     return documents
 
 
@@ -72,14 +72,14 @@ def main():
     documents = load_documents()
 
     if not documents:
-        print("\nL No documents found!")
+        print("\n❌ No documents found!")
         print("Please ensure documents exist in:")
         print("  - data/processed/english_docs.json")
         print("  - data/processed/bangla_docs.json")
         return
 
     # Initialize retrieval models
-    print("\n=' Initializing retrieval models...")
+    print("\n🔧 Initializing retrieval models...")
     print("[1/4] Building BM25...")
     bm25 = BM25Retriever(documents)
 
@@ -93,7 +93,7 @@ def main():
     print("  (This may take 1-5 minutes for first-time embedding generation)")
     semantic = SemanticRetriever(documents, cache_file='data/embeddings_cache.pkl')
 
-    print("\n All models ready!")
+    print("\n✓ All models ready!")
 
     # Initialize ranking components
     ranker = DocumentRanker()
@@ -102,9 +102,28 @@ def main():
 
     # Test queries (mix of English, Bangla, cross-lingual)
     test_queries = [
-        "bangladesh cricket team",
-        "economy growth",
-        "���ͷ� �ͯ��ͥ�",  # education system in Bangla
+        "Bangladesh national cricket team performance",
+        "বাংলাদেশের অর্থনৈতিক প্রবৃদ্ধি পরিস্থিতি",
+        "climate change এর প্রভাব in Bangladesh",
+        "বাংলাদেশ নির্বাচন ও রাজনৈতিক অবস্থা",
+        "Dhaka যানজট ও transport system",
+        "garment শিল্পের শ্রমিকদের অবস্থা",
+        "বাংলাদেশ technology startup ও digital innovation",
+        "COVID-19 স্বাস্থ্য ও মহামারি পরিস্থিতি",
+        "Bangladesh-India কূটনৈতিক relations",
+        "গাজা যুদ্ধ ও ceasefire আপডেট",
+        "women অধিকার ও gender equality",
+        "শেয়ার বাজার ও অর্থনীতি পরিস্থিতি",
+        "flood দুর্যোগ ও relief কার্যক্রম",
+        "বাংলাদেশ জাতীয় football team খবর",
+        "Rohingya শরণার্থী সংকট পরিস্থিতি",
+        "bank loan সুদের হার বাংলাদেশ",
+        "বিদ্যুৎ, power ও energy supply অবস্থা",
+        "university শিক্ষার্থীদের protest আন্দোলন",
+        "Trump এর America trade policy",
+        "চালের দাম ও food inflation",
+        "Greenland নিয়ে Trump এর territory মন্তব্য",
+        "কৃত্রিম বুদ্ধিমত্তা ও Artificial Intelligence অগ্রগতি",
     ]
 
     # Results storage
@@ -235,7 +254,7 @@ def main():
     print(f"\nResults saved to: {output_file}")
     print(f"{'=' * 80}\n")
 
-    print(" Module D Ranking Demo Complete!")
+    print("✓ Module D Ranking Demo Complete!")
     print("\nNext steps:")
     print("  1. Label queries: python scripts/run_module_d_labeling.py")
     print("  2. Run evaluation: python scripts/run_module_d_evaluation.py")

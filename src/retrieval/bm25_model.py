@@ -37,13 +37,11 @@ class BM25Retriever:
         top_indices = np.argsort(scores)[-top_k:][::-1]
         
         results = []
-        max_score = max(scores[top_indices[0]], 1.0) if len(top_indices) > 0 else 1.0
-        
+
         for rank, idx in enumerate(top_indices, 1):
             results.append({
                 'doc': self.documents[idx],
-                'score': float(scores[idx]) / max_score,
-                'raw_score': float(scores[idx]),
+                'score': float(scores[idx]),  # Raw BM25 score - let ranker handle normalization
                 'rank': rank,
                 'model': 'BM25'
             })

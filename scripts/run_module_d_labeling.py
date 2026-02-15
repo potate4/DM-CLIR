@@ -90,11 +90,28 @@ def main():
     else:
         # Default queries
         queries = [
-            "bangladesh cricket team",
-            "economy growth",
-            "education system",
-            "���ͷ� �ͯ��ͥ�",  # education in Bangla
-            "�ǲ�����",  # sports in Bangla
+            "Bangladesh national cricket team performance",
+        "বাংলাদেশের অর্থনৈতিক প্রবৃদ্ধি পরিস্থিতি",
+        "climate change এর প্রভাব in Bangladesh",
+        "বাংলাদেশ নির্বাচন ও রাজনৈতিক অবস্থা",
+        "Dhaka যানজট ও transport system",
+        "garment শিল্পের শ্রমিকদের অবস্থা",
+        "বাংলাদেশ technology startup ও digital innovation",
+        "COVID-19 স্বাস্থ্য ও মহামারি পরিস্থিতি",
+        "Bangladesh-India কূটনৈতিক relations",
+        "গাজা যুদ্ধ ও ceasefire আপডেট",
+        "women অধিকার ও gender equality",
+        "শেয়ার বাজার ও অর্থনীতি পরিস্থিতি",
+        "flood দুর্যোগ ও relief কার্যক্রম",
+        "বাংলাদেশ জাতীয় football team খবর",
+        "Rohingya শরণার্থী সংকট পরিস্থিতি",
+        "bank loan সুদের হার বাংলাদেশ",
+        "বিদ্যুৎ, power ও energy supply অবস্থা",
+        "university শিক্ষার্থীদের protest আন্দোলন",
+        "Trump এর America trade policy",
+        "চালের দাম ও food inflation",
+        "Greenland নিয়ে Trump এর territory মন্তব্য",
+        "কৃত্রিম বুদ্ধিমত্তা ও Artificial Intelligence অগ্রগতি",
         ]
         print(f"\nUsing {len(queries)} default test queries")
 

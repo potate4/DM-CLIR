@@ -42,7 +42,7 @@ class DocumentRanker:
                             'rank': 1,
                             'doc': {...},
                             'score': 0.85,        # Normalized [0, 1]
-                            'raw_score': 12.5,    # Original score
+                            'raw_score': 12.5,    # Original score from retriever
                         },
                         ...
                     ]
@@ -55,18 +55,17 @@ class DocumentRanker:
                 'results': []
             }
 
-        # Extract scores
-        scores = [r.get('score', r.get('raw_score', 0)) for r in results]
-        raw_scores = [r.get('raw_score', r.get('score', 0)) for r in results]
+        # Extract raw scores from retriever (score field contains raw scores now)
+        raw_scores = [r.get('score', 0) for r in results]
 
-        # Normalize scores
+        # Normalize scores for display/comparison
         if model_name in self.normalization_methods:
-            normalized_scores = self.normalization_methods[model_name](scores)
+            normalized_scores = self.normalization_methods[model_name](raw_scores)
         else:
             # Default: assume already normalized
-            normalized_scores = scores
+            normalized_scores = raw_scores
 
-        # Create ranked results
+        # Create ranked results with both raw and normalized scores
         ranked_results = []
         for i, result in enumerate(results[:top_k]):
             ranked_results.append({

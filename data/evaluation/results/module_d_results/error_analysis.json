@@ -1,0 +1,1653 @@
+{
+  "total_cases": 64,
+  "categories": {
+    "translation_failures": [
+      {
+        "category": "translation_failure",
+        "query_original": "বাংলাদেশের অর্থনৈতিক প্রবৃদ্ধি পরিস্থিতি",
+        "query_translated": "Economic growth situation of Bangladesh",
+        "translation_method": "google_translate",
+        "expected_translation": "N/A",
+        "bm25_top_score": 16.738822649932626,
+        "bm25_raw_score": 16.738822649932626,
+        "semantic_top_score": 0.7391304969787598,
+        "impact": "Low impact: Translation quality did not significantly affect retrieval",
+        "recommendation": "Use dictionary for common words or verify translation quality"
+      },
+      {
+        "category": "translation_failure",
+        "query_original": "climate change এর প্রভাব in Bangladesh",
+        "query_translated": "Impact of climate change in Bangladesh",
+        "translation_method": "google_translate",
+        "expected_translation": "N/A",
+        "bm25_top_score": 21.97762656003148,
+        "bm25_raw_score": 21.97762656003148,
+        "semantic_top_score": 0.734210729598999,
+        "impact": "Low impact: Translation quality did not significantly affect retrieval",
+        "recommendation": "Use dictionary for common words or verify translation quality"
+      },
+      {
+        "category": "translation_failure",
+        "query_original": "বাংলাদেশ নির্বাচন ও রাজনৈতিক অবস্থা",
+        "query_translated": "Bangladesh election and political situation",
+        "translation_method": "google_translate",
+        "expected_translation": "N/A",
+        "bm25_top_score": 20.206670299872247,
+        "bm25_raw_score": 20.206670299872247,
+        "semantic_top_score": 0.7877423167228699,
+        "impact": "Low impact: Translation quality did not significantly affect retrieval",
+        "recommendation": "Use dictionary for common words or verify translation quality"
+      },
+      {
+        "category": "translation_failure",
+        "query_original": "Dhaka যানজট ও transport system",
+        "query_translated": "Dhaka traffic congestion and transport system",
+        "translation_method": "google_translate",
+        "expected_translation": "N/A",
+        "bm25_top_score": 17.99531872393798,
+        "bm25_raw_score": 17.99531872393798,
+        "semantic_top_score": 0.7391160726547241,
+        "impact": "Low impact: Translation quality did not significantly affect retrieval",
+        "recommendation": "Use dictionary for common words or verify translation quality"
+      },
+      {
+        "category": "translation_failure",
+        "query_original": "garment শিল্পের শ্রমিকদের অবস্থা",
+        "query_translated": "Status of workers in the garment industry",
+        "translation_method": "google_translate",
+        "expected_translation": "N/A",
+        "bm25_top_score": 17.896013766392525,
+        "bm25_raw_score": 17.896013766392525,
+        "semantic_top_score": 0.7494598627090454,
+        "impact": "Low impact: Translation quality did not significantly affect retrieval",
+        "recommendation": "Use dictionary for common words or verify translation quality"
+      },
+      {
+        "category": "translation_failure",
+        "query_original": "বাংলাদেশ technology startup ও digital innovation",
+        "query_translated": "Bangladesh technology startup and digital innovation",
+        "translation_method": "google_translate",
+        "expected_translation": "N/A",
+        "bm25_top_score": 21.152465530501104,
+        "bm25_raw_score": 21.152465530501104,
+        "semantic_top_score": 0.7608815431594849,
+        "impact": "Low impact: Translation quality did not significantly affect retrieval",
+        "recommendation": "Use dictionary for common words or verify translation quality"
+      },
+      {
+        "category": "translation_failure",
+        "query_original": "COVID-19 স্বাস্থ্য ও মহামারি পরিস্থিতি",
+        "query_translated": "COVID-19 health and pandemic situation",
+        "translation_method": "google_translate",
+        "expected_translation": "N/A",
+        "bm25_top_score": 13.882227945980336,
+        "bm25_raw_score": 13.882227945980336,
+        "semantic_top_score": 0.7420519590377808,
+        "impact": "Low impact: Translation quality did not significantly affect retrieval",
+        "recommendation": "Use dictionary for common words or verify translation quality"
+      },
+      {
+        "category": "translation_failure",
+        "query_original": "Bangladesh-India কূটনৈতিক relations",
+        "query_translated": "Bangladesh-India diplomatic relations",
+        "translation_method": "google_translate",
+        "expected_translation": "N/A",
+        "bm25_top_score": 14.48605608824067,
+        "bm25_raw_score": 14.48605608824067,
+        "semantic_top_score": 0.7662643194198608,
+        "impact": "Low impact: Translation quality did not significantly affect retrieval",
+        "recommendation": "Use dictionary for common words or verify translation quality"
+      },
+      {
+        "category": "translation_failure",
+        "query_original": "গাজা যুদ্ধ ও ceasefire আপডেট",
+        "query_translated": "Gaza war and ceasefire updates",
+        "translation_method": "google_translate",
+        "expected_translation": "N/A",
+        "bm25_top_score": 22.467560575700894,
+        "bm25_raw_score": 22.467560575700894,
+        "semantic_top_score": 0.7277002334594727,
+        "impact": "Low impact: Translation quality did not significantly affect retrieval",
+        "recommendation": "Use dictionary for common words or verify translation quality"
+      },
+      {
+        "category": "translation_failure",
+        "query_original": "women অধিকার ও gender equality",
+        "query_translated": "Women rights and gender equality",
+        "translation_method": "google_translate",
+        "expected_translation": "N/A",
+        "bm25_top_score": 27.064802194622654,
+        "bm25_raw_score": 27.064802194622654,
+        "semantic_top_score": 0.7296098470687866,
+        "impact": "Low impact: Translation quality did not significantly affect retrieval",
+        "recommendation": "Use dictionary for common words or verify translation quality"
+      }
+    ],
+    "named_entity_mismatch": [
+      {
+        "category": "named_entity_mismatch",
+        "query": "Bangladesh national cricket team performance",
+        "entities": [
+          {
+            "text": "Bangladesh",
+            "type": "GPE",
+            "variants": [
+              "Bangladesh",
+              "বাংলাদেশ"
+            ],
+            "extraction_method": "spacy_ner"
+          }
+        ],
+        "model_scores": {
+          "BM25": 25.85174235539959,
+          "Fuzzy": 70.0,
+          "Semantic": 0.7277863621711731
+        },
+        "raw_scores": {
+          "BM25": 25.85174235539959,
+          "Fuzzy": 70.0,
+          "Semantic": 0.7277863621711731
+        },
+        "bm25_score": 25.85174235539959,
+        "fuzzy_score": 70.0,
+        "semantic_score": 0.7277863621711731,
+        "analysis": "Fuzzy matching provides partial entity matching through character similarity",
+        "recommendation": "Add NER mapping layer to handle cross-lingual entity matching"
+      },
+      {
+        "category": "named_entity_mismatch",
+        "query": "বাংলাদেশের অর্থনৈতিক প্রবৃদ্ধি পরিস্থিতি",
+        "entities": [
+          {
+            "text": "বাংলাদেশ",
+            "type": "ENTITY",
+            "variants": [
+              "বাংলাদেশ",
+              "bangladesh"
+            ],
+            "extraction_method": "dictionary"
+          }
+        ],
+        "model_scores": {
+          "BM25": 21.051175468938816,
+          "Fuzzy": 75.0,
+          "Semantic": 0.7391304969787598
+        },
+        "raw_scores": {
+          "BM25": 21.051175468938816,
+          "Fuzzy": 75.0,
+          "Semantic": 0.7391304969787598
+        },
+        "bm25_score": 21.051175468938816,
+        "fuzzy_score": 75.0,
+        "semantic_score": 0.7391304969787598,
+        "analysis": "Fuzzy matching provides partial entity matching through character similarity",
+        "recommendation": "Add NER mapping layer to handle cross-lingual entity matching"
+      },
+      {
+        "category": "named_entity_mismatch",
+        "query": "বাংলাদেশ নির্বাচন ও রাজনৈতিক অবস্থা",
+        "entities": [
+          {
+            "text": "বাংলাদেশ",
+            "type": "ENTITY",
+            "variants": [
+              "বাংলাদেশ",
+              "bangladesh"
+            ],
+            "extraction_method": "dictionary"
+          }
+        ],
+        "model_scores": {
+          "BM25": 14.71657988858368,
+          "Fuzzy": 74.0,
+          "Semantic": 0.7877423167228699
+        },
+        "raw_scores": {
+          "BM25": 14.71657988858368,
+          "Fuzzy": 74.0,
+          "Semantic": 0.7877423167228699
+        },
+        "bm25_score": 14.71657988858368,
+        "fuzzy_score": 74.0,
+        "semantic_score": 0.7877423167228699,
+        "analysis": "Fuzzy matching provides partial entity matching through character similarity",
+        "recommendation": "Add NER mapping layer to handle cross-lingual entity matching"
+      },
+      {
+        "category": "named_entity_mismatch",
+        "query": "বাংলাদেশ technology startup ও digital innovation",
+        "entities": [
+          {
+            "text": "বাংলাদেশ",
+            "type": "ENTITY",
+            "variants": [
+              "বাংলাদেশ"
+            ],
+            "extraction_method": "dictionary"
+          }
+        ],
+        "model_scores": {
+          "BM25": 16.70735368622086,
+          "Fuzzy": 56.0,
+          "Semantic": 0.7608815431594849
+        },
+        "raw_scores": {
+          "BM25": 16.70735368622086,
+          "Fuzzy": 56.0,
+          "Semantic": 0.7608815431594849
+        },
+        "bm25_score": 16.70735368622086,
+        "fuzzy_score": 56.0,
+        "semantic_score": 0.7608815431594849,
+        "analysis": "Fuzzy matching provides partial entity matching through character similarity",
+        "recommendation": "Add NER mapping layer to handle cross-lingual entity matching"
+      },
+      {
+        "category": "named_entity_mismatch",
+        "query": "বাংলাদেশ জাতীয় football team খবর",
+        "entities": [
+          {
+            "text": "বাংলাদেশ",
+            "type": "ENTITY",
+            "variants": [
+              "বাংলাদেশ"
+            ],
+            "extraction_method": "dictionary"
+          }
+        ],
+        "model_scores": {
+          "BM25": 13.736967849283408,
+          "Fuzzy": 58.0,
+          "Semantic": 0.7532522678375244
+        },
+        "raw_scores": {
+          "BM25": 13.736967849283408,
+          "Fuzzy": 58.0,
+          "Semantic": 0.7532522678375244
+        },
+        "bm25_score": 13.736967849283408,
+        "fuzzy_score": 58.0,
+        "semantic_score": 0.7532522678375244,
+        "analysis": "Fuzzy matching provides partial entity matching through character similarity",
+        "recommendation": "Add NER mapping layer to handle cross-lingual entity matching"
+      },
+      {
+        "category": "named_entity_mismatch",
+        "query": "bank loan সুদের হার বাংলাদেশ",
+        "entities": [
+          {
+            "text": "বাংলাদেশ",
+            "type": "ENTITY",
+            "variants": [
+              "বাংলাদেশ",
+              "bangladesh"
+            ],
+            "extraction_method": "dictionary"
+          }
+        ],
+        "model_scores": {
+          "BM25": 19.115700170693074,
+          "Fuzzy": 61.0,
+          "Semantic": 0.7220844626426697
+        },
+        "raw_scores": {
+          "BM25": 19.115700170693074,
+          "Fuzzy": 61.0,
+          "Semantic": 0.7220844626426697
+        },
+        "bm25_score": 19.115700170693074,
+        "fuzzy_score": 61.0,
+        "semantic_score": 0.7220844626426697,
+        "analysis": "Fuzzy matching provides partial entity matching through character similarity",
+        "recommendation": "Add NER mapping layer to handle cross-lingual entity matching"
+      },
+      {
+        "category": "named_entity_mismatch",
+        "query": "Trump এর America trade policy",
+        "entities": [
+          {
+            "text": "Trump এর America",
+            "type": "ORG",
+            "variants": [
+              "Trump এর America"
+            ],
+            "extraction_method": "spacy_ner"
+          }
+        ],
+        "model_scores": {
+          "BM25": 18.03955167672722,
+          "Fuzzy": 62.0,
+          "Semantic": 0.7937241792678833
+        },
+        "raw_scores": {
+          "BM25": 18.03955167672722,
+          "Fuzzy": 62.0,
+          "Semantic": 0.7937241792678833
+        },
+        "bm25_score": 18.03955167672722,
+        "fuzzy_score": 62.0,
+        "semantic_score": 0.7937241792678833,
+        "analysis": "Fuzzy matching provides partial entity matching through character similarity",
+        "recommendation": "Add NER mapping layer to handle cross-lingual entity matching"
+      }
+    ],
+    "semantic_vs_lexical": [
+      {
+        "category": "semantic_vs_lexical",
+        "query": "Bangladesh national cricket team performance",
+        "semantic_wins": false,
+        "lexical_wins": false,
+        "winner": "both",
+        "reason": "Both approaches found relevant documents",
+        "lexical_top_score": 25.85174235539959,
+        "lexical_raw_score": 25.85174235539959,
+        "semantic_top_score": 0.7277863621711731,
+        "score_difference": -25.123955993228417,
+        "case_study": {
+          "query": "Bangladesh national cricket team performance",
+          "winner": "both",
+          "top_results": {
+            "BM25": {
+              "title": "ICC to pick alternate team if Bangladesh won't play in India",
+              "score": 25.85174235539959,
+              "raw_score": 25.85174235539959
+            },
+            "Semantic": {
+              "title": "বাংলাদেশ দল যাবে না নিরাপত্তা শঙ্কায়, ভারতে শরফুদ্দৌলা কীভাবে আম্পায়ারিং করছেন",
+              "score": 0.7277863621711731,
+              "raw_score": 0.7277863621711731
+            }
+          }
+        }
+      },
+      {
+        "category": "semantic_vs_lexical",
+        "query": "বাংলাদেশের অর্থনৈতিক প্রবৃদ্ধি পরিস্থিতি",
+        "semantic_wins": false,
+        "lexical_wins": false,
+        "winner": "both",
+        "reason": "Both approaches found relevant documents",
+        "lexical_top_score": 21.051175468938816,
+        "lexical_raw_score": 21.051175468938816,
+        "semantic_top_score": 0.7391304969787598,
+        "score_difference": -20.312044971960056,
+        "case_study": {
+          "query": "বাংলাদেশের অর্থনৈতিক প্রবৃদ্ধি পরিস্থিতি",
+          "winner": "both",
+          "top_results": {
+            "BM25": {
+              "title": "বাংলাদেশের মূল ঝুঁকি অপরাধ ও অবৈধ অর্থনৈতিক তৎপরতা: ওয়ার্ল্ড ইকোনমিক ফোরাম",
+              "score": 21.051175468938816,
+              "raw_score": 21.051175468938816
+            },
+            "Semantic": {
+              "title": "বাড়িভাড়ায় ভোগান্তি",
+              "score": 0.7391304969787598,
+              "raw_score": 0.7391304969787598
+            }
+          }
+        }
+      },
+      {
+        "category": "semantic_vs_lexical",
+        "query": "climate change এর প্রভাব in Bangladesh",
+        "semantic_wins": false,
+        "lexical_wins": false,
+        "winner": "both",
+        "reason": "Both approaches found relevant documents",
+        "lexical_top_score": 18.011942529744026,
+        "lexical_raw_score": 18.011942529744026,
+        "semantic_top_score": 0.734210729598999,
+        "score_difference": -17.277731800145027,
+        "case_study": {
+          "query": "climate change এর প্রভাব in Bangladesh",
+          "winner": "both",
+          "top_results": {
+            "BM25": {
+              "title": "Women at the Forefront: Shaping Climate Action in Bangladesh",
+              "score": 18.011942529744026,
+              "raw_score": 18.011942529744026
+            },
+            "Semantic": {
+              "title": "নতুন মার্কিন নিরাপত্তানীতি বাংলাদেশের উপর কী প্রভাব ফেলবে",
+              "score": 0.734210729598999,
+              "raw_score": 0.734210729598999
+            }
+          }
+        }
+      },
+      {
+        "category": "semantic_vs_lexical",
+        "query": "বাংলাদেশ নির্বাচন ও রাজনৈতিক অবস্থা",
+        "semantic_wins": false,
+        "lexical_wins": false,
+        "winner": "both",
+        "reason": "Both approaches found relevant documents",
+        "lexical_top_score": 14.71657988858368,
+        "lexical_raw_score": 14.71657988858368,
+        "semantic_top_score": 0.7877423167228699,
+        "score_difference": -13.92883757186081,
+        "case_study": {
+          "query": "বাংলাদেশ নির্বাচন ও রাজনৈতিক অবস্থা",
+          "winner": "both",
+          "top_results": {
+            "BM25": {
+              "title": "শুধু সুষ্ঠু নির্বাচনই নয়, অর্থনৈতিক শৃঙ্খলাও ফেরাতে হবে",
+              "score": 14.71657988858368,
+              "raw_score": 14.71657988858368
+            },
+            "Semantic": {
+              "title": "গণ অভ্যুত্থান পরবর্তী নির্বাচনে নারীরা কোথায়",
+              "score": 0.7877423167228699,
+              "raw_score": 0.7877423167228699
+            }
+          }
+        }
+      },
+      {
+        "category": "semantic_vs_lexical",
+        "query": "Dhaka যানজট ও transport system",
+        "semantic_wins": false,
+        "lexical_wins": false,
+        "winner": "both",
+        "reason": "Both approaches found relevant documents",
+        "lexical_top_score": 17.150854088464765,
+        "lexical_raw_score": 17.150854088464765,
+        "semantic_top_score": 0.7391160726547241,
+        "score_difference": -16.41173801581004,
+        "case_study": {
+          "query": "Dhaka যানজট ও transport system",
+          "winner": "both",
+          "top_results": {
+            "BM25": {
+              "title": "BIWTA s recreational plan harms ecological protection",
+              "score": 17.150854088464765,
+              "raw_score": 17.150854088464765
+            },
+            "Semantic": {
+              "title": "ঢাকা ও শহরতলির বাসে চালু হচ্ছে ই-টিকিট ব্যবস্থা",
+              "score": 0.7391160726547241,
+              "raw_score": 0.7391160726547241
+            }
+          }
+        }
+      },
+      {
+        "category": "semantic_vs_lexical",
+        "query": "garment শিল্পের শ্রমিকদের অবস্থা",
+        "semantic_wins": false,
+        "lexical_wins": false,
+        "winner": "both",
+        "reason": "Both approaches found relevant documents",
+        "lexical_top_score": 11.541309874385847,
+        "lexical_raw_score": 11.541309874385847,
+        "semantic_top_score": 0.7494598627090454,
+        "score_difference": -10.791850011676802,
+        "case_study": {
+          "query": "garment শিল্পের শ্রমিকদের অবস্থা",
+          "winner": "both",
+          "top_results": {
+            "BM25": {
+              "title": "আন্দোলনে সামনের কাতারে থাকলেও শ্রমজীবীরা বঞ্চিত থাকেন",
+              "score": 11.541309874385847,
+              "raw_score": 11.541309874385847
+            },
+            "Semantic": {
+              "title": "টঙ্গীতে সেই পোশাক কারখানায় আবারও অসুস্থ শতাধিক শ্রমিক",
+              "score": 0.7494598627090454,
+              "raw_score": 0.7494598627090454
+            }
+          }
+        }
+      },
+      {
+        "category": "semantic_vs_lexical",
+        "query": "বাংলাদেশ technology startup ও digital innovation",
+        "semantic_wins": false,
+        "lexical_wins": false,
+        "winner": "both",
+        "reason": "Both approaches found relevant documents",
+        "lexical_top_score": 16.70735368622086,
+        "lexical_raw_score": 16.70735368622086,
+        "semantic_top_score": 0.7608815431594849,
+        "score_difference": -15.946472143061374,
+        "case_study": {
+          "query": "বাংলাদেশ technology startup ও digital innovation",
+          "winner": "both",
+          "top_results": {
+            "BM25": {
+              "title": "Policy reset for a digital economy",
+              "score": 16.70735368622086,
+              "raw_score": 16.70735368622086
+            },
+            "Semantic": {
+              "title": "রাইডিং টেকনোলজিতে এক নতুন উচ্চতা স্পর্শ করল বাংলাদেশ এসিআই মটরস্",
+              "score": 0.7608815431594849,
+              "raw_score": 0.7608815431594849
+            }
+          }
+        }
+      },
+      {
+        "category": "semantic_vs_lexical",
+        "query": "COVID-19 স্বাস্থ্য ও মহামারি পরিস্থিতি",
+        "semantic_wins": false,
+        "lexical_wins": false,
+        "winner": "both",
+        "reason": "Both approaches found relevant documents",
+        "lexical_top_score": 11.323046499933824,
+        "lexical_raw_score": 11.323046499933824,
+        "semantic_top_score": 0.7420519590377808,
+        "score_difference": -10.580994540896043,
+        "case_study": {
+          "query": "COVID-19 স্বাস্থ্য ও মহামারি পরিস্থিতি",
+          "winner": "both",
+          "top_results": {
+            "BM25": {
+              "title": "শ্রীপুরে বকেয়া বেতনের দাবিতে সড়ক অবরোধ, শ্রমিক-পুলিশ সংঘর্ষে আহত ৩০",
+              "score": 11.323046499933824,
+              "raw_score": 11.323046499933824
+            },
+            "Semantic": {
+              "title": "19 more dengue patients hospitalized in 24hrs",
+              "score": 0.7420519590377808,
+              "raw_score": 0.7420519590377808
+            }
+          }
+        }
+      },
+      {
+        "category": "semantic_vs_lexical",
+        "query": "Bangladesh-India কূটনৈতিক relations",
+        "semantic_wins": false,
+        "lexical_wins": false,
+        "winner": "tie",
+        "reason": "Both approaches perform similarly",
+        "lexical_top_score": 9.44326334684305,
+        "lexical_raw_score": 9.44326334684305,
+        "semantic_top_score": 0.7662643194198608,
+        "score_difference": -8.67699902742319,
+        "case_study": {
+          "query": "Bangladesh-India কূটনৈতিক relations",
+          "winner": "tie",
+          "top_results": {
+            "BM25": {
+              "title": "Ashraful hopeful Bangladesh-India cricketing ties will improve after elections",
+              "score": 9.44326334684305,
+              "raw_score": 9.44326334684305
+            },
+            "Semantic": {
+              "title": "টি টুয়েন্টি বিশ্বকাপ নিয়ে উত্তাপের মধ্যেই ভারতের বিপক্ষে খেলতে নামছেন বাংলাদেশের যুবারা",
+              "score": 0.7662643194198608,
+              "raw_score": 0.7662643194198608
+            }
+          }
+        }
+      },
+      {
+        "category": "semantic_vs_lexical",
+        "query": "গাজা যুদ্ধ ও ceasefire আপডেট",
+        "semantic_wins": false,
+        "lexical_wins": false,
+        "winner": "both",
+        "reason": "Both approaches found relevant documents",
+        "lexical_top_score": 17.793996067993646,
+        "lexical_raw_score": 17.793996067993646,
+        "semantic_top_score": 0.7277002334594727,
+        "score_difference": -17.066295834534174,
+        "case_study": {
+          "query": "গাজা যুদ্ধ ও ceasefire আপডেট",
+          "winner": "both",
+          "top_results": {
+            "BM25": {
+              "title": "গাজার জন্য বোর্ড অব পিস গঠনের ঘোষণা দিলেন ট্রাম্প",
+              "score": 17.793996067993646,
+              "raw_score": 17.793996067993646
+            },
+            "Semantic": {
+              "title": "Killings in Gaza despite ceasefire phase 2 announcement",
+              "score": 0.7277002334594727,
+              "raw_score": 0.7277002334594727
+            }
+          }
+        }
+      },
+      {
+        "category": "semantic_vs_lexical",
+        "query": "women অধিকার ও gender equality",
+        "semantic_wins": false,
+        "lexical_wins": false,
+        "winner": "both",
+        "reason": "Both approaches found relevant documents",
+        "lexical_top_score": 23.619292995214927,
+        "lexical_raw_score": 23.619292995214927,
+        "semantic_top_score": 0.7296098470687866,
+        "score_difference": -22.88968314814614,
+        "case_study": {
+          "query": "women অধিকার ও gender equality",
+          "winner": "both",
+          "top_results": {
+            "BM25": {
+              "title": "Women at the Forefront: Shaping Climate Action in Bangladesh",
+              "score": 23.619292995214927,
+              "raw_score": 23.619292995214927
+            },
+            "Semantic": {
+              "title": "নির্বাচনে মাত্র ৪ শতাংশ নারী প্রার্থী কেন, দলগুলোর জবাবদিহি চান নারী অধিকারকর্মীরা",
+              "score": 0.7296098470687866,
+              "raw_score": 0.7296098470687866
+            }
+          }
+        }
+      },
+      {
+        "category": "semantic_vs_lexical",
+        "query": "শেয়ার বাজার ও অর্থনীতি পরিস্থিতি",
+        "semantic_wins": false,
+        "lexical_wins": false,
+        "winner": "both",
+        "reason": "Both approaches found relevant documents",
+        "lexical_top_score": 16.763767559348004,
+        "lexical_raw_score": 16.763767559348004,
+        "semantic_top_score": 0.7267321348190308,
+        "score_difference": -16.037035424528973,
+        "case_study": {
+          "query": "শেয়ার বাজার ও অর্থনীতি পরিস্থিতি",
+          "winner": "both",
+          "top_results": {
+            "BM25": {
+              "title": "এবার স্কয়ার ফার্মার ২১ কোটি টাকার শেয়ার কিনবেন পরিচালক রত্না পাত্র",
+              "score": 16.763767559348004,
+              "raw_score": 16.763767559348004
+            },
+            "Semantic": {
+              "title": "বাংলাদেশের রাজনৈতিক অর্থায়ন এবং গণতন্ত্রের সংকট",
+              "score": 0.7267321348190308,
+              "raw_score": 0.7267321348190308
+            }
+          }
+        }
+      },
+      {
+        "category": "semantic_vs_lexical",
+        "query": "flood দুর্যোগ ও relief কার্যক্রম",
+        "semantic_wins": false,
+        "lexical_wins": false,
+        "winner": "both",
+        "reason": "Both approaches found relevant documents",
+        "lexical_top_score": 11.824426136069505,
+        "lexical_raw_score": 11.824426136069505,
+        "semantic_top_score": 0.7155228853225708,
+        "score_difference": -11.108903250746934,
+        "case_study": {
+          "query": "flood দুর্যোগ ও relief কার্যক্রম",
+          "winner": "both",
+          "top_results": {
+            "BM25": {
+              "title": "Heavy rain and wind warning as schools closed and roads flooded",
+              "score": 11.824426136069505,
+              "raw_score": 11.824426136069505
+            },
+            "Semantic": {
+              "title": "وفاة 25 بغزة جراء المنخفضات بينهم 6 أطفال قضوا بردا",
+              "score": 0.7155228853225708,
+              "raw_score": 0.7155228853225708
+            }
+          }
+        }
+      },
+      {
+        "category": "semantic_vs_lexical",
+        "query": "বাংলাদেশ জাতীয় football team খবর",
+        "semantic_wins": false,
+        "lexical_wins": false,
+        "winner": "both",
+        "reason": "Both approaches found relevant documents",
+        "lexical_top_score": 13.736967849283408,
+        "lexical_raw_score": 13.736967849283408,
+        "semantic_top_score": 0.7532522678375244,
+        "score_difference": -12.983715581445884,
+        "case_study": {
+          "query": "বাংলাদেশ জাতীয় football team খবর",
+          "winner": "both",
+          "top_results": {
+            "BM25": {
+              "title": "Senegal coach defends AFCON final walk-off before expected sanction",
+              "score": 13.736967849283408,
+              "raw_score": 13.736967849283408
+            },
+            "Semantic": {
+              "title": "বাংলাদেশ দল যাবে না নিরাপত্তা শঙ্কায়, ভারতে শরফুদ্দৌলা কীভাবে আম্পায়ারিং করছেন",
+              "score": 0.7532522678375244,
+              "raw_score": 0.7532522678375244
+            }
+          }
+        }
+      },
+      {
+        "category": "semantic_vs_lexical",
+        "query": "Rohingya শরণার্থী সংকট পরিস্থিতি",
+        "semantic_wins": false,
+        "lexical_wins": false,
+        "winner": "both",
+        "reason": "Both approaches found relevant documents",
+        "lexical_top_score": 16.092878396264,
+        "lexical_raw_score": 16.092878396264,
+        "semantic_top_score": 0.7111656665802002,
+        "score_difference": -15.381712729683798,
+        "case_study": {
+          "query": "Rohingya শরণার্থী সংকট পরিস্থিতি",
+          "winner": "both",
+          "top_results": {
+            "BM25": {
+              "title": "ইরানে আন্দোলন নিয়ে কেন ভয়ে আছে তুরস্ক",
+              "score": 16.092878396264,
+              "raw_score": 16.092878396264
+            },
+            "Semantic": {
+              "title": "Hundreds of shanties gutted in midnight fire at Rohingya camp",
+              "score": 0.7111656665802002,
+              "raw_score": 0.7111656665802002
+            }
+          }
+        }
+      },
+      {
+        "category": "semantic_vs_lexical",
+        "query": "bank loan সুদের হার বাংলাদেশ",
+        "semantic_wins": false,
+        "lexical_wins": false,
+        "winner": "both",
+        "reason": "Both approaches found relevant documents",
+        "lexical_top_score": 19.115700170693074,
+        "lexical_raw_score": 19.115700170693074,
+        "semantic_top_score": 0.7220844626426697,
+        "score_difference": -18.393615708050405,
+        "case_study": {
+          "query": "bank loan সুদের হার বাংলাদেশ",
+          "winner": "both",
+          "top_results": {
+            "BM25": {
+              "title": "ফেডের চেয়ারম্যানের বিরুদ্ধে কেন ফৌজদারি তদন্ত, কী করেছেন তিনি",
+              "score": 19.115700170693074,
+              "raw_score": 19.115700170693074
+            },
+            "Semantic": {
+              "title": "সবার জন্য কিউআর কোডের মাধ্যমে ক্যাশলেস বাংলাদেশ বাস্তবায়ন",
+              "score": 0.7220844626426697,
+              "raw_score": 0.7220844626426697
+            }
+          }
+        }
+      },
+      {
+        "category": "semantic_vs_lexical",
+        "query": "বিদ্যুৎ, power ও energy supply অবস্থা",
+        "semantic_wins": false,
+        "lexical_wins": false,
+        "winner": "both",
+        "reason": "Both approaches found relevant documents",
+        "lexical_top_score": 18.835622467475932,
+        "lexical_raw_score": 18.835622467475932,
+        "semantic_top_score": 0.7141622304916382,
+        "score_difference": -18.121460236984294,
+        "case_study": {
+          "query": "বিদ্যুৎ, power ও energy supply অবস্থা",
+          "winner": "both",
+          "top_results": {
+            "BM25": {
+              "title": "Business leaders sound alarm on challenges, urge govt support",
+              "score": 18.835622467475932,
+              "raw_score": 18.835622467475932
+            },
+            "Semantic": {
+              "title": "এক সপ্তাহের মধ্যে সব নির্বাচন কেন্দ্রে বিদ্যুৎ সরবরাহের নির্দেশ",
+              "score": 0.7141622304916382,
+              "raw_score": 0.7141622304916382
+            }
+          }
+        }
+      },
+      {
+        "category": "semantic_vs_lexical",
+        "query": "university শিক্ষার্থীদের protest আন্দোলন",
+        "semantic_wins": false,
+        "lexical_wins": false,
+        "winner": "both",
+        "reason": "Both approaches found relevant documents",
+        "lexical_top_score": 12.40014864430449,
+        "lexical_raw_score": 12.40014864430449,
+        "semantic_top_score": 0.799882173538208,
+        "score_difference": -11.600266470766282,
+        "case_study": {
+          "query": "university শিক্ষার্থীদের protest আন্দোলন",
+          "winner": "both",
+          "top_results": {
+            "BM25": {
+              "title": "আন্দোলনের মুখে এশিয়া প্যাসিফিক বিশ্ববিদ্যালয়ের দুই শিক্ষক চাকরিচ্যুত",
+              "score": 12.40014864430449,
+              "raw_score": 12.40014864430449
+            },
+            "Semantic": {
+              "title": "ছাত্রশিবির নেতার বক্তব্যের প্রতিবাদে জগন্নাথ বিশ্ববিদ্যালয়ে ছাত্রদলের বিক্ষোভ",
+              "score": 0.799882173538208,
+              "raw_score": 0.799882173538208
+            }
+          }
+        }
+      },
+      {
+        "category": "semantic_vs_lexical",
+        "query": "Trump এর America trade policy",
+        "semantic_wins": false,
+        "lexical_wins": false,
+        "winner": "both",
+        "reason": "Both approaches found relevant documents",
+        "lexical_top_score": 18.03955167672722,
+        "lexical_raw_score": 18.03955167672722,
+        "semantic_top_score": 0.7937241792678833,
+        "score_difference": -17.245827497459338,
+        "case_study": {
+          "query": "Trump এর America trade policy",
+          "winner": "both",
+          "top_results": {
+            "BM25": {
+              "title": "Europe is learning that a deal with Trump doesn t exist",
+              "score": 18.03955167672722,
+              "raw_score": 18.03955167672722
+            },
+            "Semantic": {
+              "title": "গ্রিনল্যান্ড ইস্যুতে কেন পিছু হটলেন ট্রাম্প, এটাই কি তাঁর নতুন কৌশল",
+              "score": 0.7937241792678833,
+              "raw_score": 0.7937241792678833
+            }
+          }
+        }
+      },
+      {
+        "category": "semantic_vs_lexical",
+        "query": "চালের দাম ও food inflation",
+        "semantic_wins": false,
+        "lexical_wins": false,
+        "winner": "both",
+        "reason": "Both approaches found relevant documents",
+        "lexical_top_score": 20.62874004898812,
+        "lexical_raw_score": 20.62874004898812,
+        "semantic_top_score": 0.7382941246032715,
+        "score_difference": -19.89044592438485,
+        "case_study": {
+          "query": "চালের দাম ও food inflation",
+          "winner": "both",
+          "top_results": {
+            "BM25": {
+              "title": "ডিমের দাম ডজনে কমেছে ১০ টাকা",
+              "score": 20.62874004898812,
+              "raw_score": 20.62874004898812
+            },
+            "Semantic": {
+              "title": "ডিমের দাম ডজনে কমেছে ১০ টাকা",
+              "score": 0.7382941246032715,
+              "raw_score": 0.7382941246032715
+            }
+          }
+        }
+      },
+      {
+        "category": "semantic_vs_lexical",
+        "query": "Greenland নিয়ে Trump এর territory মন্তব্য",
+        "semantic_wins": false,
+        "lexical_wins": false,
+        "winner": "both",
+        "reason": "Both approaches found relevant documents",
+        "lexical_top_score": 18.57614460419295,
+        "lexical_raw_score": 18.57614460419295,
+        "semantic_top_score": 0.8127175569534302,
+        "score_difference": -17.76342704723952,
+        "case_study": {
+          "query": "Greenland নিয়ে Trump এর territory মন্তব্য",
+          "winner": "both",
+          "top_results": {
+            "BM25": {
+              "title": "Why does Trump want Greenland so much, and why is it so important strategically?",
+              "score": 18.57614460419295,
+              "raw_score": 18.57614460419295
+            },
+            "Semantic": {
+              "title": "ট্রাম্পের গ্রিনল্যান্ড দখলের চেষ্টাকে কীভাবে দেখছেন মার্কিন জনগণ",
+              "score": 0.8127175569534302,
+              "raw_score": 0.8127175569534302
+            }
+          }
+        }
+      },
+      {
+        "category": "semantic_vs_lexical",
+        "query": "কৃত্রিম বুদ্ধিমত্তা ও Artificial Intelligence অগ্রগতি",
+        "semantic_wins": false,
+        "lexical_wins": false,
+        "winner": "both",
+        "reason": "Both approaches found relevant documents",
+        "lexical_top_score": 17.700912911959286,
+        "lexical_raw_score": 17.700912911959286,
+        "semantic_top_score": 0.7185491323471069,
+        "score_difference": -16.98236377961218,
+        "case_study": {
+          "query": "কৃত্রিম বুদ্ধিমত্তা ও Artificial Intelligence অগ্রগতি",
+          "winner": "both",
+          "top_results": {
+            "BM25": {
+              "title": "হিসাববিদদের প্রতি কৃত্রিম বুদ্ধিমত্তার নৈতিক ব্যবহারের আহ্বান",
+              "score": 17.700912911959286,
+              "raw_score": 17.700912911959286
+            },
+            "Semantic": {
+              "title": "Lights, camera, algorithm: Why Indian cinema is awash with AI",
+              "score": 0.7185491323471069,
+              "raw_score": 0.7185491323471069
+            }
+          }
+        }
+      }
+    ],
+    "cross_script_ambiguity": [
+      {
+        "category": "cross_script_ambiguity",
+        "query_variants": [
+          "Bangladesh",
+          "বাংলাদেশ"
+        ],
+        "variant_scores": {
+          "Bangladesh": {
+            "BM25": 6.026820557405524,
+            "Fuzzy": 100.0,
+            "Semantic": 0.7039726972579956
+          },
+          "বাংলাদেশ": {
+            "BM25": 4.582461246788006,
+            "Fuzzy": 100.0,
+            "Semantic": 0.7171252965927124
+          }
+        },
+        "variant_raw_scores": {
+          "Bangladesh": {
+            "BM25": 6.026820557405524,
+            "Fuzzy": 100.0,
+            "Semantic": 0.7039726972579956
+          },
+          "বাংলাদেশ": {
+            "BM25": 4.582461246788006,
+            "Fuzzy": 100.0,
+            "Semantic": 0.7171252965927124
+          }
+        },
+        "best_variant_per_model": {
+          "BM25": "Bangladesh",
+          "Fuzzy": "Bangladesh",
+          "Semantic": "বাংলাদেশ"
+        },
+        "analysis": "Different models prefer different variants:   BM25: Bangladesh   Fuzzy: Bangladesh   Semantic: বাংলাদেশ Semantic model shows more flexibility with script variations",
+        "recommendation": "Add transliteration preprocessing to normalize variants"
+      },
+      {
+        "category": "cross_script_ambiguity",
+        "query_variants": [
+          "Dhaka",
+          "ঢাকা"
+        ],
+        "variant_scores": {
+          "Dhaka": {
+            "BM25": 7.217619401159854,
+            "Fuzzy": 100.0,
+            "Semantic": 0.718457818031311
+          },
+          "ঢাকা": {
+            "BM25": 5.414451585030662,
+            "Fuzzy": 100.0,
+            "Semantic": 0.7213048934936523
+          }
+        },
+        "variant_raw_scores": {
+          "Dhaka": {
+            "BM25": 7.217619401159854,
+            "Fuzzy": 100.0,
+            "Semantic": 0.718457818031311
+          },
+          "ঢাকা": {
+            "BM25": 5.414451585030662,
+            "Fuzzy": 100.0,
+            "Semantic": 0.7213048934936523
+          }
+        },
+        "best_variant_per_model": {
+          "BM25": "Dhaka",
+          "Fuzzy": "Dhaka",
+          "Semantic": "ঢাকা"
+        },
+        "analysis": "Different models prefer different variants:   BM25: Dhaka   Fuzzy: Dhaka   Semantic: ঢাকা Semantic model shows more flexibility with script variations",
+        "recommendation": "Add transliteration preprocessing to normalize variants"
+      },
+      {
+        "category": "cross_script_ambiguity",
+        "query_variants": [
+          "cricket",
+          "ক্রিকেট"
+        ],
+        "variant_scores": {
+          "cricket": {
+            "BM25": 11.501528456520083,
+            "Fuzzy": 100.0,
+            "Semantic": 0.6774700880050659
+          },
+          "ক্রিকেট": {
+            "BM25": 9.102116467378883,
+            "Fuzzy": 100.0,
+            "Semantic": 0.6969091892242432
+          }
+        },
+        "variant_raw_scores": {
+          "cricket": {
+            "BM25": 11.501528456520083,
+            "Fuzzy": 100.0,
+            "Semantic": 0.6774700880050659
+          },
+          "ক্রিকেট": {
+            "BM25": 9.102116467378883,
+            "Fuzzy": 100.0,
+            "Semantic": 0.6969091892242432
+          }
+        },
+        "best_variant_per_model": {
+          "BM25": "cricket",
+          "Fuzzy": "cricket",
+          "Semantic": "ক্রিকেট"
+        },
+        "analysis": "Different models prefer different variants:   BM25: cricket   Fuzzy: cricket   Semantic: ক্রিকেট Semantic model shows more flexibility with script variations",
+        "recommendation": "Add transliteration preprocessing to normalize variants"
+      },
+      {
+        "category": "cross_script_ambiguity",
+        "query_variants": [
+          "India",
+          "ভারত"
+        ],
+        "variant_scores": {
+          "India": {
+            "BM25": 7.766646581364791,
+            "Fuzzy": 100.0,
+            "Semantic": 0.7154266834259033
+          },
+          "ভারত": {
+            "BM25": 9.062385341040663,
+            "Fuzzy": 100.0,
+            "Semantic": 0.714484453201294
+          }
+        },
+        "variant_raw_scores": {
+          "India": {
+            "BM25": 7.766646581364791,
+            "Fuzzy": 100.0,
+            "Semantic": 0.7154266834259033
+          },
+          "ভারত": {
+            "BM25": 9.062385341040663,
+            "Fuzzy": 100.0,
+            "Semantic": 0.714484453201294
+          }
+        },
+        "best_variant_per_model": {
+          "BM25": "ভারত",
+          "Fuzzy": "India",
+          "Semantic": "India"
+        },
+        "analysis": "Different models prefer different variants:   BM25: ভারত   Fuzzy: India   Semantic: India Semantic model shows more flexibility with script variations",
+        "recommendation": "Add transliteration preprocessing to normalize variants"
+      },
+      {
+        "category": "cross_script_ambiguity",
+        "query_variants": [
+          "Trump",
+          "ট্রাম্প"
+        ],
+        "variant_scores": {
+          "Trump": {
+            "BM25": 4.9767363733060686,
+            "Fuzzy": 100.0,
+            "Semantic": 0.7457911968231201
+          },
+          "ট্রাম্প": {
+            "BM25": 7.7904911992387795,
+            "Fuzzy": 100.0,
+            "Semantic": 0.7396801710128784
+          }
+        },
+        "variant_raw_scores": {
+          "Trump": {
+            "BM25": 4.9767363733060686,
+            "Fuzzy": 100.0,
+            "Semantic": 0.7457911968231201
+          },
+          "ট্রাম্প": {
+            "BM25": 7.7904911992387795,
+            "Fuzzy": 100.0,
+            "Semantic": 0.7396801710128784
+          }
+        },
+        "best_variant_per_model": {
+          "BM25": "ট্রাম্প",
+          "Fuzzy": "Trump",
+          "Semantic": "Trump"
+        },
+        "analysis": "Different models prefer different variants:   BM25: ট্রাম্প   Fuzzy: Trump   Semantic: Trump Semantic model shows more flexibility with script variations",
+        "recommendation": "Add transliteration preprocessing to normalize variants"
+      },
+      {
+        "category": "cross_script_ambiguity",
+        "query_variants": [
+          "football",
+          "ফুটবল"
+        ],
+        "variant_scores": {
+          "football": {
+            "BM25": 9.681648145505239,
+            "Fuzzy": 100.0,
+            "Semantic": 0.666615903377533
+          },
+          "ফুটবল": {
+            "BM25": 9.831541482152188,
+            "Fuzzy": 100.0,
+            "Semantic": 0.677920937538147
+          }
+        },
+        "variant_raw_scores": {
+          "football": {
+            "BM25": 9.681648145505239,
+            "Fuzzy": 100.0,
+            "Semantic": 0.666615903377533
+          },
+          "ফুটবল": {
+            "BM25": 9.831541482152188,
+            "Fuzzy": 100.0,
+            "Semantic": 0.677920937538147
+          }
+        },
+        "best_variant_per_model": {
+          "BM25": "ফুটবল",
+          "Fuzzy": "football",
+          "Semantic": "ফুটবল"
+        },
+        "analysis": "Different models prefer different variants:   BM25: ফুটবল   Fuzzy: football   Semantic: ফুটবল Semantic model shows more flexibility with script variations",
+        "recommendation": "Add transliteration preprocessing to normalize variants"
+      },
+      {
+        "category": "cross_script_ambiguity",
+        "query_variants": [
+          "Rohingya",
+          "রোহিঙ্গা"
+        ],
+        "variant_scores": {
+          "Rohingya": {
+            "BM25": 13.453125647351976,
+            "Fuzzy": 100.0,
+            "Semantic": 0.69196617603302
+          },
+          "রোহিঙ্গা": {
+            "BM25": 13.506033588353324,
+            "Fuzzy": 100.0,
+            "Semantic": 0.7125683426856995
+          }
+        },
+        "variant_raw_scores": {
+          "Rohingya": {
+            "BM25": 13.453125647351976,
+            "Fuzzy": 100.0,
+            "Semantic": 0.69196617603302
+          },
+          "রোহিঙ্গা": {
+            "BM25": 13.506033588353324,
+            "Fuzzy": 100.0,
+            "Semantic": 0.7125683426856995
+          }
+        },
+        "best_variant_per_model": {
+          "BM25": "রোহিঙ্গা",
+          "Fuzzy": "Rohingya",
+          "Semantic": "রোহিঙ্গা"
+        },
+        "analysis": "Different models prefer different variants:   BM25: রোহিঙ্গা   Fuzzy: Rohingya   Semantic: রোহিঙ্গা Semantic model shows more flexibility with script variations",
+        "recommendation": "Add transliteration preprocessing to normalize variants"
+      }
+    ],
+    "code_switching": [
+      {
+        "category": "code_switching",
+        "query": "climate change এর প্রভাব in Bangladesh",
+        "languages_detected": [
+          "english",
+          "bangla"
+        ],
+        "code_switching": true,
+        "model_scores": {
+          "BM25": 18.011942529744026,
+          "Semantic": 0.734210729598999
+        },
+        "raw_scores": {
+          "BM25": 18.011942529744026,
+          "Semantic": 0.734210729598999
+        },
+        "bm25_score": 18.011942529744026,
+        "bm25_raw_score": 18.011942529744026,
+        "semantic_score": 0.734210729598999,
+        "handling_quality": "partial",
+        "analysis": "BM25 partially matches on shared terms",
+        "recommendation": "Language-agnostic embeddings (like LaBSE) help with code-switching"
+      },
+      {
+        "category": "code_switching",
+        "query": "Dhaka যানজট ও transport system",
+        "languages_detected": [
+          "english",
+          "bangla"
+        ],
+        "code_switching": true,
+        "model_scores": {
+          "BM25": 17.150854088464765,
+          "Semantic": 0.7391160726547241
+        },
+        "raw_scores": {
+          "BM25": 17.150854088464765,
+          "Semantic": 0.7391160726547241
+        },
+        "bm25_score": 17.150854088464765,
+        "bm25_raw_score": 17.150854088464765,
+        "semantic_score": 0.7391160726547241,
+        "handling_quality": "partial",
+        "analysis": "BM25 partially matches on shared terms",
+        "recommendation": "Language-agnostic embeddings (like LaBSE) help with code-switching"
+      },
+      {
+        "category": "code_switching",
+        "query": "garment শিল্পের শ্রমিকদের অবস্থা",
+        "languages_detected": [
+          "english",
+          "bangla"
+        ],
+        "code_switching": true,
+        "model_scores": {
+          "BM25": 11.541309874385847,
+          "Semantic": 0.7494598627090454
+        },
+        "raw_scores": {
+          "BM25": 11.541309874385847,
+          "Semantic": 0.7494598627090454
+        },
+        "bm25_score": 11.541309874385847,
+        "bm25_raw_score": 11.541309874385847,
+        "semantic_score": 0.7494598627090454,
+        "handling_quality": "partial",
+        "analysis": "BM25 partially matches on shared terms",
+        "recommendation": "Language-agnostic embeddings (like LaBSE) help with code-switching"
+      },
+      {
+        "category": "code_switching",
+        "query": "বাংলাদেশ technology startup ও digital innovation",
+        "languages_detected": [
+          "english",
+          "bangla"
+        ],
+        "code_switching": true,
+        "model_scores": {
+          "BM25": 16.70735368622086,
+          "Semantic": 0.7608815431594849
+        },
+        "raw_scores": {
+          "BM25": 16.70735368622086,
+          "Semantic": 0.7608815431594849
+        },
+        "bm25_score": 16.70735368622086,
+        "bm25_raw_score": 16.70735368622086,
+        "semantic_score": 0.7608815431594849,
+        "handling_quality": "partial",
+        "analysis": "BM25 partially matches on shared terms",
+        "recommendation": "Language-agnostic embeddings (like LaBSE) help with code-switching"
+      },
+      {
+        "category": "code_switching",
+        "query": "COVID-19 স্বাস্থ্য ও মহামারি পরিস্থিতি",
+        "languages_detected": [
+          "english",
+          "bangla"
+        ],
+        "code_switching": true,
+        "model_scores": {
+          "BM25": 11.323046499933824,
+          "Semantic": 0.7420519590377808
+        },
+        "raw_scores": {
+          "BM25": 11.323046499933824,
+          "Semantic": 0.7420519590377808
+        },
+        "bm25_score": 11.323046499933824,
+        "bm25_raw_score": 11.323046499933824,
+        "semantic_score": 0.7420519590377808,
+        "handling_quality": "partial",
+        "analysis": "BM25 partially matches on shared terms",
+        "recommendation": "Language-agnostic embeddings (like LaBSE) help with code-switching"
+      },
+      {
+        "category": "code_switching",
+        "query": "Bangladesh-India কূটনৈতিক relations",
+        "languages_detected": [
+          "english",
+          "bangla"
+        ],
+        "code_switching": true,
+        "model_scores": {
+          "BM25": 9.44326334684305,
+          "Semantic": 0.7662643194198608
+        },
+        "raw_scores": {
+          "BM25": 9.44326334684305,
+          "Semantic": 0.7662643194198608
+        },
+        "bm25_score": 9.44326334684305,
+        "bm25_raw_score": 9.44326334684305,
+        "semantic_score": 0.7662643194198608,
+        "handling_quality": "partial",
+        "analysis": "BM25 partially matches on shared terms",
+        "recommendation": "Language-agnostic embeddings (like LaBSE) help with code-switching"
+      },
+      {
+        "category": "code_switching",
+        "query": "গাজা যুদ্ধ ও ceasefire আপডেট",
+        "languages_detected": [
+          "english",
+          "bangla"
+        ],
+        "code_switching": true,
+        "model_scores": {
+          "BM25": 17.793996067993646,
+          "Semantic": 0.7277002334594727
+        },
+        "raw_scores": {
+          "BM25": 17.793996067993646,
+          "Semantic": 0.7277002334594727
+        },
+        "bm25_score": 17.793996067993646,
+        "bm25_raw_score": 17.793996067993646,
+        "semantic_score": 0.7277002334594727,
+        "handling_quality": "partial",
+        "analysis": "BM25 partially matches on shared terms",
+        "recommendation": "Language-agnostic embeddings (like LaBSE) help with code-switching"
+      },
+      {
+        "category": "code_switching",
+        "query": "women অধিকার ও gender equality",
+        "languages_detected": [
+          "english",
+          "bangla"
+        ],
+        "code_switching": true,
+        "model_scores": {
+          "BM25": 23.619292995214927,
+          "Semantic": 0.7296098470687866
+        },
+        "raw_scores": {
+          "BM25": 23.619292995214927,
+          "Semantic": 0.7296098470687866
+        },
+        "bm25_score": 23.619292995214927,
+        "bm25_raw_score": 23.619292995214927,
+        "semantic_score": 0.7296098470687866,
+        "handling_quality": "partial",
+        "analysis": "BM25 partially matches on shared terms",
+        "recommendation": "Language-agnostic embeddings (like LaBSE) help with code-switching"
+      },
+      {
+        "category": "code_switching",
+        "query": "flood দুর্যোগ ও relief কার্যক্রম",
+        "languages_detected": [
+          "english",
+          "bangla"
+        ],
+        "code_switching": true,
+        "model_scores": {
+          "BM25": 11.824426136069505,
+          "Semantic": 0.7155228853225708
+        },
+        "raw_scores": {
+          "BM25": 11.824426136069505,
+          "Semantic": 0.7155228853225708
+        },
+        "bm25_score": 11.824426136069505,
+        "bm25_raw_score": 11.824426136069505,
+        "semantic_score": 0.7155228853225708,
+        "handling_quality": "partial",
+        "analysis": "BM25 partially matches on shared terms",
+        "recommendation": "Language-agnostic embeddings (like LaBSE) help with code-switching"
+      },
+      {
+        "category": "code_switching",
+        "query": "বাংলাদেশ জাতীয় football team খবর",
+        "languages_detected": [
+          "english",
+          "bangla"
+        ],
+        "code_switching": true,
+        "model_scores": {
+          "BM25": 13.736967849283408,
+          "Semantic": 0.7532522678375244
+        },
+        "raw_scores": {
+          "BM25": 13.736967849283408,
+          "Semantic": 0.7532522678375244
+        },
+        "bm25_score": 13.736967849283408,
+        "bm25_raw_score": 13.736967849283408,
+        "semantic_score": 0.7532522678375244,
+        "handling_quality": "partial",
+        "analysis": "BM25 partially matches on shared terms",
+        "recommendation": "Language-agnostic embeddings (like LaBSE) help with code-switching"
+      },
+      {
+        "category": "code_switching",
+        "query": "Rohingya শরণার্থী সংকট পরিস্থিতি",
+        "languages_detected": [
+          "english",
+          "bangla"
+        ],
+        "code_switching": true,
+        "model_scores": {
+          "BM25": 16.092878396264,
+          "Semantic": 0.7111656665802002
+        },
+        "raw_scores": {
+          "BM25": 16.092878396264,
+          "Semantic": 0.7111656665802002
+        },
+        "bm25_score": 16.092878396264,
+        "bm25_raw_score": 16.092878396264,
+        "semantic_score": 0.7111656665802002,
+        "handling_quality": "partial",
+        "analysis": "BM25 partially matches on shared terms",
+        "recommendation": "Language-agnostic embeddings (like LaBSE) help with code-switching"
+      },
+      {
+        "category": "code_switching",
+        "query": "bank loan সুদের হার বাংলাদেশ",
+        "languages_detected": [
+          "english",
+          "bangla"
+        ],
+        "code_switching": true,
+        "model_scores": {
+          "BM25": 19.115700170693074,
+          "Semantic": 0.7220844626426697
+        },
+        "raw_scores": {
+          "BM25": 19.115700170693074,
+          "Semantic": 0.7220844626426697
+        },
+        "bm25_score": 19.115700170693074,
+        "bm25_raw_score": 19.115700170693074,
+        "semantic_score": 0.7220844626426697,
+        "handling_quality": "partial",
+        "analysis": "BM25 partially matches on shared terms",
+        "recommendation": "Language-agnostic embeddings (like LaBSE) help with code-switching"
+      },
+      {
+        "category": "code_switching",
+        "query": "বিদ্যুৎ, power ও energy supply অবস্থা",
+        "languages_detected": [
+          "english",
+          "bangla"
+        ],
+        "code_switching": true,
+        "model_scores": {
+          "BM25": 18.835622467475932,
+          "Semantic": 0.7141622304916382
+        },
+        "raw_scores": {
+          "BM25": 18.835622467475932,
+          "Semantic": 0.7141622304916382
+        },
+        "bm25_score": 18.835622467475932,
+        "bm25_raw_score": 18.835622467475932,
+        "semantic_score": 0.7141622304916382,
+        "handling_quality": "partial",
+        "analysis": "BM25 partially matches on shared terms",
+        "recommendation": "Language-agnostic embeddings (like LaBSE) help with code-switching"
+      },
+      {
+        "category": "code_switching",
+        "query": "university শিক্ষার্থীদের protest আন্দোলন",
+        "languages_detected": [
+          "english",
+          "bangla"
+        ],
+        "code_switching": true,
+        "model_scores": {
+          "BM25": 12.40014864430449,
+          "Semantic": 0.799882173538208
+        },
+        "raw_scores": {
+          "BM25": 12.40014864430449,
+          "Semantic": 0.799882173538208
+        },
+        "bm25_score": 12.40014864430449,
+        "bm25_raw_score": 12.40014864430449,
+        "semantic_score": 0.799882173538208,
+        "handling_quality": "partial",
+        "analysis": "BM25 partially matches on shared terms",
+        "recommendation": "Language-agnostic embeddings (like LaBSE) help with code-switching"
+      },
+      {
+        "category": "code_switching",
+        "query": "Trump এর America trade policy",
+        "languages_detected": [
+          "english",
+          "bangla"
+        ],
+        "code_switching": true,
+        "model_scores": {
+          "BM25": 18.03955167672722,
+          "Semantic": 0.7937241792678833
+        },
+        "raw_scores": {
+          "BM25": 18.03955167672722,
+          "Semantic": 0.7937241792678833
+        },
+        "bm25_score": 18.03955167672722,
+        "bm25_raw_score": 18.03955167672722,
+        "semantic_score": 0.7937241792678833,
+        "handling_quality": "partial",
+        "analysis": "BM25 partially matches on shared terms",
+        "recommendation": "Language-agnostic embeddings (like LaBSE) help with code-switching"
+      },
+      {
+        "category": "code_switching",
+        "query": "চালের দাম ও food inflation",
+        "languages_detected": [
+          "english",
+          "bangla"
+        ],
+        "code_switching": true,
+        "model_scores": {
+          "BM25": 20.62874004898812,
+          "Semantic": 0.7382941246032715
+        },
+        "raw_scores": {
+          "BM25": 20.62874004898812,
+          "Semantic": 0.7382941246032715
+        },
+        "bm25_score": 20.62874004898812,
+        "bm25_raw_score": 20.62874004898812,
+        "semantic_score": 0.7382941246032715,
+        "handling_quality": "partial",
+        "analysis": "BM25 partially matches on shared terms",
+        "recommendation": "Language-agnostic embeddings (like LaBSE) help with code-switching"
+      },
+      {
+        "category": "code_switching",
+        "query": "Greenland নিয়ে Trump এর territory মন্তব্য",
+        "languages_detected": [
+          "english",
+          "bangla"
+        ],
+        "code_switching": true,
+        "model_scores": {
+          "BM25": 18.57614460419295,
+          "Semantic": 0.8127175569534302
+        },
+        "raw_scores": {
+          "BM25": 18.57614460419295,
+          "Semantic": 0.8127175569534302
+        },
+        "bm25_score": 18.57614460419295,
+        "bm25_raw_score": 18.57614460419295,
+        "semantic_score": 0.8127175569534302,
+        "handling_quality": "partial",
+        "analysis": "BM25 partially matches on shared terms",
+        "recommendation": "Language-agnostic embeddings (like LaBSE) help with code-switching"
+      },
+      {
+        "category": "code_switching",
+        "query": "কৃত্রিম বুদ্ধিমত্তা ও Artificial Intelligence অগ্রগতি",
+        "languages_detected": [
+          "english",
+          "bangla"
+        ],
+        "code_switching": true,
+        "model_scores": {
+          "BM25": 17.700912911959286,
+          "Semantic": 0.7185491323471069
+        },
+        "raw_scores": {
+          "BM25": 17.700912911959286,
+          "Semantic": 0.7185491323471069
+        },
+        "bm25_score": 17.700912911959286,
+        "bm25_raw_score": 17.700912911959286,
+        "semantic_score": 0.7185491323471069,
+        "handling_quality": "partial",
+        "analysis": "BM25 partially matches on shared terms",
+        "recommendation": "Language-agnostic embeddings (like LaBSE) help with code-switching"
+      }
+    ]
+  },
+  "summary": "Translation Failures: 10 case(s) analyzed\nNamed Entity Mismatch: 7 case(s) analyzed\nSemantic Vs Lexical: 22 case(s) analyzed\nCross Script Ambiguity: 7 case(s) analyzed\nCode Switching: 18 case(s) analyzed",
+  "recommendations": [
+    "Implement NER mapping layer for cross-lingual entity matching",
+    "Add transliteration preprocessing to normalize script variants",
+    "Use hybrid approach: Semantic for cross-lingual + Lexical for exact matching",
+    "Validate translation quality for common query terms using dictionary",
+    "Leverage language-agnostic embeddings (LaBSE) for code-switching queries"
+  ],
+  "category_counts": {
+    "translation_failures": 10,
+    "named_entity_mismatch": 7,
+    "semantic_vs_lexical": 22,
+    "cross_script_ambiguity": 7,
+    "code_switching": 18
+  }
+}
